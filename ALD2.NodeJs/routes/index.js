@@ -24,10 +24,14 @@ exports.mapView = function (req, res) {
 
 
 var fs = require('fs'),
-    xml2js = require('xml2js');
+    xml2js = require('xml2js'),
+    _ = require('lodash');
 
 var name = "";
 exports.mapJsonData = function (req, res) {
+    
+    loadData.load(function (groups) { 
+        
     var parser = new xml2js.Parser();
     fs.readFile("./data/CCC_Data.KML", function (err, data) {
         parser.parseString(data, function (err, result) {
@@ -44,7 +48,9 @@ exports.mapJsonData = function (req, res) {
                 else {
                     counter++;
                     
-                    try {
+                        try {
+                          var groupIndex = _.find(groups, function(o) { return o.ccgcode == placemark.name[0] });
+
                         var cccData = {
                             type: "Feature",
                             geometry: {
@@ -54,7 +60,8 @@ exports.mapJsonData = function (req, res) {
                                 ]
                             },
                             properties: {
-                                //                name: placemark.name[0],
+                                ccgCode: placemark.name[0],
+                                color: groups[groupIndex],
                                 //                desc: placemark.description[0]
                                 prop0: "value0",
                                 prop1: {
@@ -103,5 +110,6 @@ exports.mapJsonData = function (req, res) {
             console.log('Done');
             res.send(finalData);
         });
+    });
     });
 }

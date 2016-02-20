@@ -12,7 +12,7 @@
     "jade": "*",
     "stylus": "*",
     "fast-csv":  "*",
-    "stylus": "*",
-    "xml2js": "*"
+    "xml2js": "*",
+    "lodash": "*"
   }
 }
