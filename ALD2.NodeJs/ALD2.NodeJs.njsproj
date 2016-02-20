@@ -41,6 +41,7 @@
     <Content Include="data\CCC_Data.KML" />
     <Content Include="data\CCGImmunisation.csv" />
     <Content Include="package.json" />
+    <Content Include="public\stylesheets\site.css" />
     <Content Include="README.md" />
     <Content Include="views\index.jade" />
     <Content Include="views\layout.jade" />
