@@ -1,0 +1,10 @@
+{
+  "name": "ALD2.NodeJs",
+  "version": "0.0.0",
+  "description": "ALD2.NodeJs",
+  "main": "server.js",
+  "author": {
+    "name": "chewd",
+    "email": ""
+  }
+}
