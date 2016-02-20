@@ -12,5 +12,7 @@
     "jade": "*",
     "stylus": "*",
     "fast-csv":  "*"
+    "stylus": "*",
+    "fast-csv": "*"
   }
 }
