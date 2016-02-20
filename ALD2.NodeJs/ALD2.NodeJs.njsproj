@@ -35,6 +35,7 @@
     <Content Include="BashScripts\gitrepopull.sh" />
     <Compile Include="LoadData.js" />
     <Compile Include="public\javascripts\geolocation.js" />
+    <Compile Include="public\javascripts\hospital.js" />
     <Compile Include="routes\index.js" />
     <Content Include="data\AEWaitingTimes1215.csv" />
     <Content Include="data\CCC_BSC Feb2013 %28clipcoast 200m%29 KML format.KML" />
