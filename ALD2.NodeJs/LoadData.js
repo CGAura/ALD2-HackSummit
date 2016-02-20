@@ -4,7 +4,7 @@ var csv = require('fast-csv');
 module.exports = {
     load: function (success) {
         
-        var stream = fs.createReadStream("./AEWaitingTimes1215.csv");
+        var stream = fs.createReadStream("./data/AEWaitingTimes1215.csv");
         var hospitals = Array();
 
     csv 
