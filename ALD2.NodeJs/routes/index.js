@@ -49,8 +49,11 @@ exports.mapJsonData = function (req, res) {
                     counter++;
                     
                         try {
-                          var groupIndex = _.find(groups, function(o) { return o.ccgcode == placemark.name[0] });
-
+                            var groupIndex = _.find(groups, function (o) { return o.ccgcode == placemark.name[0] });
+                            var setColor = 'FF888888';
+                            if (groupIndex) {
+                                setColor = groupIndex.colour;
+                            }
                         var cccData = {
                             type: "Feature",
                             geometry: {
@@ -61,7 +64,7 @@ exports.mapJsonData = function (req, res) {
                             },
                             properties: {
                                 ccgCode: placemark.name[0],
-                                color: groups[groupIndex],
+                                color: setColor,
                                 //                desc: placemark.description[0]
                                 prop0: "value0",
                                 prop1: {
