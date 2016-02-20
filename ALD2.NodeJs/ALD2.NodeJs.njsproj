@@ -33,6 +33,7 @@
   <ItemGroup>
     <Compile Include="app.js" />
     <Content Include="BashScripts\gitrepopull.sh" />
+    <Compile Include="LoadData.js" />
     <Compile Include="public\javascripts\geolocation.js" />
     <Compile Include="public\javascripts\hospital.js" />
     <Compile Include="routes\index.js" />
