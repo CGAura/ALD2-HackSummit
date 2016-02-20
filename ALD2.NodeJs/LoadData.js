@@ -10,7 +10,7 @@ module.exports = {
     csv 
     .fromStream(stream, {headers : true})
     .on("data", function (data) {
-            groups.push(data.ccgname);
+            groups.push(data);
         })
     .on("end", function () {
             success(groups);
