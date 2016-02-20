@@ -33,6 +33,7 @@
   <ItemGroup>
     <Compile Include="app.js" />
     <Content Include="BashScripts\gitrepopull.sh" />
+    <Compile Include="LoadData.js" />
     <Compile Include="routes\index.js" />
     <Content Include="data\AEWaitingTimes1215.csv" />
     <Content Include="package.json" />
