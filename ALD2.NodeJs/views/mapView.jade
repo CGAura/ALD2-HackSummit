@@ -1,0 +1,28 @@
+﻿doctype html
+html
+  head
+    title
+    style
+   body
+        div(id="map")
+        script.   
+            function initMap() {
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 11,
+                center: {lat: 41.876, lng: -87.624}
+              });
+              var ctaLayer = new google.maps.KmlLayer({
+                url: 'http://googlemaps.github.io/js-v2-samples/ggeoxml/cta.kml',
+                map: map
+              });
+            }
+
+
+
+
+        script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTbkoShScdbiTv3Zi3PfepjMoMyFTzbeY&signed_in=true&callback=initMap")
+        div
+            p hello world
+
+
+

@@ -33,6 +33,7 @@
   <ItemGroup>
     <Compile Include="app.js" />
     <Content Include="BashScripts\gitrepopull.sh" />
+    <Compile Include="bingMaps.js" />
     <Compile Include="public\javascripts\geolocation.js" />
     <Compile Include="routes\index.js" />
     <Content Include="data\AEWaitingTimes1215.csv" />
@@ -42,6 +43,7 @@
     <Content Include="README.md" />
     <Content Include="views\index.jade" />
     <Content Include="views\layout.jade" />
+    <Content Include="views\mapView.jade" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\" />
