@@ -32,6 +32,7 @@
   <ItemGroup>
     <Compile Include="app.js" />
     <Content Include="BashScripts\gitrepopull.sh" />
+    <Compile Include="public\javascripts\geolocation.js" />
     <Compile Include="routes\index.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
