@@ -35,6 +35,8 @@
     <Content Include="BashScripts\gitrepopull.sh" />
     <Compile Include="routes\index.js" />
     <Content Include="data\AEWaitingTimes1215.csv" />
+    <Content Include="data\Clinics.csv" />
+    <Content Include="data\Hospital.csv" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="views\index.jade" />
