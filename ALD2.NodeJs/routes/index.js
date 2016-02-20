@@ -6,7 +6,7 @@ exports.index = function (req, res) {
         groups.forEach(
             function (group) {
                 res
-                .write(group.ccgname + "\n");
+                .write(group.ccgname + " " + group.colour + "\n");
             }
         );
         
@@ -16,7 +16,8 @@ exports.index = function (req, res) {
 };
 
 
-exports.mapView = function (req, res){
+exports.mapView = function(req, res) {
+    loadData.load(function(groups) {
     res.render('mapView', {});
 }
 
