@@ -2,9 +2,14 @@
   "name": "ALD2.NodeJs",
   "version": "0.0.0",
   "description": "ALD2.NodeJs",
-  "main": "server.js",
+  "main": "app.js",
   "author": {
     "name": "chewd",
     "email": ""
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "jade": "*",
+    "stylus": "*"
   }
 }
