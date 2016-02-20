@@ -39,7 +39,7 @@
     <Compile Include="public\javascripts\hospital.js" />
     <Compile Include="routes\index.js" />
     <Content Include="data\AEWaitingTimes1215.csv" />
-    <Content Include="data\CCC_BSC Feb2013 %28clipcoast 200m%29 KML format.KML" />
+    <Content Include="data\CCC_Data.KML" />
     <Content Include="data\CCGImmunisation.csv" />
     <Content Include="data\Clinics.csv" />
     <Content Include="data\Hospital.csv" />
