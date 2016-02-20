@@ -37,6 +37,8 @@
     <Compile Include="public\javascripts\geolocation.js" />
     <Compile Include="routes\index.js" />
     <Content Include="data\AEWaitingTimes1215.csv" />
+    <Content Include="data\CCC_BSC Feb2013 %28clipcoast 200m%29 KML format.KML" />
+    <Content Include="data\CCGImmunisation.csv" />
     <Content Include="data\Clinics.csv" />
     <Content Include="data\Hospital.csv" />
     <Content Include="package.json" />
