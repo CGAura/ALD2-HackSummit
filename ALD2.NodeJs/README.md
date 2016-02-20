@@ -9,6 +9,8 @@ Install Visual studio Node tools
 Install node js
 https://nodejs.org/en/
 
+set up packages and proxy
+npm --proxy http://[YOUR USERNAME]:[YOUR PASSWORD]@ukproxy.emea.cshare.net:8080 --without-ssl --insecure  install
 
 On Koding VM
 
