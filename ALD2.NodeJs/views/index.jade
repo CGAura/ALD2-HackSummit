@@ -2,6 +2,7 @@
 
 block content
     p(id="posdata") something else
+    p(id="trustname") boohoo
 
 
 block scripts   
@@ -11,4 +12,9 @@ block scripts
              var long = coordinates.long;
              var lat = coordinates.lat;
              document.getElementById("posdata").innerHTML = "long: " + long + "   Lat: " + lat;
+       });
+       unloadHospitalData(function()
+       {
+             var trustname = trustdata.trustName;
+             document.getEleentById("trustname").innerHTML = "RF4 trust name: " + trustname;
        });
