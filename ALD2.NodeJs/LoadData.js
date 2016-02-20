@@ -4,16 +4,16 @@ var csv = require('fast-csv');
 module.exports = {
     load: function (success) {
         
-        var stream = fs.createReadStream("./data/AEWaitingTimes1215.csv");
-        var hospitals = Array();
+        var stream = fs.createReadStream("./data/CCGImmunisation.csv");
+        var groups = Array();
 
     csv 
     .fromStream(stream, {headers : true})
     .on("data", function (data) {
-            hospitals.push(data.Name);
+            groups.push(data.ccgname);
         })
     .on("end", function () {
-            success(hospitals);
+            success(groups);
         });
     }
 };

@@ -2,12 +2,12 @@
     
 exports.index = function (req, res) {
 
-    loadData.load(function (hospitals) {
-        console.log(hospitals.length);
-        hospitals.forEach(
-            function (hospital) {
+    loadData.load(function (groups) {
+        console.log(groups.length);
+        groups.forEach(
+            function (group) {
                 res
-                .write(hospital);
+                .write(group);
             }
         );
         
