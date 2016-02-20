@@ -50,7 +50,7 @@ exports.mapJsonData = function (req, res) {
                     
                         try {
                             var groupIndex = _.find(groups, function (o) { return o.ccgcode == placemark.name[0] });
-                            var setColor = '#FF888888';
+                            var setColor = '#888888';
                             if (groupIndex) {
                                 setColor = groupIndex.colour;
                             }
