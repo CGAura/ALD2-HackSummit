@@ -16,9 +16,10 @@ exports.index = function (req, res) {
 };
 
 
-exports.mapView = function(req, res) {
-    loadData.load(function(groups) {
-    res.render('mapView', {});
+exports.mapView = function (req, res) {
+    loadData.load(function (groups) {
+        res.render('mapView', {});
+    })
 }
 
 
