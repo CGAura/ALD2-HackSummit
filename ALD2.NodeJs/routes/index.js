@@ -36,44 +36,67 @@ exports.mapJsonData = function (req, res) {
                 type: "FeatureCollection",
                 features: new Array()
             };
-            
+            var counter = 0;
             result.kml.Folder[0].Placemark.forEach(function (placemark){
-                try {
-                    var cccData = {
-                        type: "Feature",
-                        coordinates: new Array(),
-                        name: placemark.name[0],
-                        desc: placemark.description[0],
-                    };
-                    
-                    name = cccData.name;
-                    if (name === "05Q") {
-                        console.log(name);
-                    }
-                    var outerBoundry;
-                    if (placemark.Polygon) {
-                        outerBoundry = placemark.Polygon[0].outerBoundaryIs[0];
-                    }
-                    else if (placemark.MultiGeometry) {
-                        outerBoundry = placemark.MultiGeometry[0].Polygon[0].outerBoundaryIs[0]
-                    }
-                    
-                    var coordinates = outerBoundry.LinearRing[0].coordinates[0];
-                    coordinates.split('\n').forEach(function (splitOne) {
-                        var trimmed = splitOne.trim();
-                        var longLatArray = trimmed.split(',');
-                        if (trimmed != "") {
-                            var points = new Array();
-                            points.push(longLatArray[0]);
-                            points.push(longLatArray[1]);
-                            cccData.coordinates.push(points);
-                        }
-                    });
-                    
-                    finalData.features.push(cccData);
+                if (true == false) {
+                    console.log(counter);
                 }
+                else {
+                    counter++;
+                    
+                    try {
+                        var cccData = {
+                            type: "Feature",
+                            geometry: {
+                                type: "Polygon",
+                                coordinates: [
+                                    new Array()
+                                ]
+                            },
+                            properties: {
+                                //                name: placemark.name[0],
+                                //                desc: placemark.description[0]
+                                prop0: "value0",
+                                prop1: {
+                                    "this" : "that"
+                                }
+                            }
+                        };
+                        
+                        name = cccData.name;
+                        if (name === "05Q") {
+                            console.log(name);
+                        }
+                        var outerBoundry;
+                        if (placemark.Polygon) {
+                            outerBoundry = placemark.Polygon[0].outerBoundaryIs[0];
+                        }
+                        else if (placemark.MultiGeometry) {
+                            outerBoundry = placemark.MultiGeometry[0].Polygon[0].outerBoundaryIs[0]
+                        }
+                        
+                        var coordinates = outerBoundry.LinearRing[0].coordinates[0];
+                        var counter = 0;
+                        coordinates.split('\n').forEach(function (splitOne) {
+                            var trimmed = splitOne.trim();
+                            var longLatArray = trimmed.split(',');
+                            if (trimmed != "") {
+                               
+
+                                var points = new Array();
+                                points.push(parseFloat(longLatArray[0]));
+                                points.push(parseFloat(longLatArray[1]));
+                                    cccData.geometry.coordinates[0].push(points);
+                                
+                                
+                            }
+                        });
+                        
+                        finalData.features.push(cccData);
+                    }
                 catch (exx) {
-                    console.log(name + exx);
+                        console.log(name + exx);
+                    }
                 }
             });
 

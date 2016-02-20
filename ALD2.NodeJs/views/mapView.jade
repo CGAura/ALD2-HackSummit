@@ -25,20 +25,13 @@ html
             div(id="MyGoogleMapID")
         div(id="MyInfo")
         script.   
+            var map;
             function initMap() {
-              var map = new google.maps.Map(document.getElementById('MyGoogleMapID'), {
+              map = new google.maps.Map(document.getElementById('MyGoogleMapID'), {
                 zoom: 11,
                 center: {lat: 51.50, lng: -0.127}
               });
-              var ctaLayer = new google.maps.KmlLayer({
-                url: 'https://raw.githubusercontent.com/DannChewy/ALD2-HackSummit/master/ALD2.NodeJs/data/CCC_Data.KML',
-                map: map,
-                suppressInfoWindows: true
-              });
-              ctaLayer.addListener('click', function(kmlEvent) {
-                var text = kmlEvent.featureData.name;
-                document.getElementById('MyInfo').innerHTML = text;
-              });
+              map.data.loadGeoJson('/KlmData/');
               return true;
             }
             
