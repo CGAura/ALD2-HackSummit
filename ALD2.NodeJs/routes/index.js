@@ -19,3 +19,4 @@ exports.index = function (req, res) {
 exports.mapView = function (req, res){
     res.render('mapView', {});
 }
+
