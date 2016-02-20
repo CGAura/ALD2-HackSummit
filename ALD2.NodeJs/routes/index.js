@@ -28,91 +28,86 @@ var fs = require('fs'),
     _ = require('lodash');
 
 var name = "";
-exports.mapJsonData = function (req, res) {
-    
-    loadData.load(function (groups) { 
-        
-    var parser = new xml2js.Parser();
-    fs.readFile("./data/CCC_Data.KML", function (err, data) {
-        parser.parseString(data, function (err, result) {
-            console.dir(result);
-            var finalData = {
-                type: "FeatureCollection",
-                features: new Array()
-            };
-            var counter = 0;
-            result.kml.Folder[0].Placemark.forEach(function (placemark){
-                if (true == false) {
-                    console.log(counter);
-                }
-                else {
-                    counter++;
-                    
-                        try {
-                            var groupIndex = _.find(groups, function (o) { return o.ccgcode == placemark.name[0] });
-                            var setColor = '#888888';
-                            if (groupIndex) {
-                                setColor = groupIndex.colour;
-                            }
-                        var cccData = {
-                            type: "Feature",
-                            geometry: {
-                                type: "Polygon",
-                                coordinates: [
-                                    new Array()
-                                ]
-                            },
-                            properties: {
-                                ccgCode: placemark.name[0],
-                                color: setColor,
-                                //                desc: placemark.description[0]
-                                prop0: "value0",
-                                prop1: {
-                                    "this" : "that"
-                                }
-                            }
-                        };
-                        
-                        name = cccData.name;
-                        if (name === "05Q") {
-                            console.log(name);
-                        }
-                        var outerBoundry;
-                        if (placemark.Polygon) {
-                            outerBoundry = placemark.Polygon[0].outerBoundaryIs[0];
-                        }
-                        else if (placemark.MultiGeometry) {
-                            outerBoundry = placemark.MultiGeometry[0].Polygon[0].outerBoundaryIs[0]
-                        }
-                        
-                        var coordinates = outerBoundry.LinearRing[0].coordinates[0];
-                        var counter = 0;
-                        coordinates.split('\n').forEach(function (splitOne) {
-                            var trimmed = splitOne.trim();
-                            var longLatArray = trimmed.split(',');
-                            if (trimmed != "") {
-                               
 
-                                var points = new Array();
-                                points.push(parseFloat(longLatArray[0]));
-                                points.push(parseFloat(longLatArray[1]));
-                                    cccData.geometry.coordinates[0].push(points);
-                                
-                                
+function getGroupColor(groupIndex){
+    var setColor = '#888888';
+    if (groupIndex) {
+        setColor = groupIndex.colour;
+    }
+    return setColor;
+}
+
+function GetNewCccData(name, groupIndex){
+    var data = {
+        type: "Feature",
+        geometry: {
+            type: "Polygon",
+            coordinates: [
+                new Array()
+            ]
+        },
+        properties: {
+            ccgCode:name,
+            color: getGroupColor(groupIndex)
+        }
+    };
+    return data;
+}
+
+function GetCoordinates(placemark){
+    var outerBoundry;
+    if (placemark.Polygon) {
+        outerBoundry = placemark.Polygon[0].outerBoundaryIs[0];
+    }
+    else if (placemark.MultiGeometry) {
+        outerBoundry = placemark.MultiGeometry[0].Polygon[0].outerBoundaryIs[0]
+    }
+    var coordinates = outerBoundry.LinearRing[0].coordinates[0];
+
+    return coordinates;
+}
+
+function ConvertCoordinateLine(line){
+    var trimmed = line.trim();
+    if (trimmed != "") {
+        var longLatArray = trimmed.split(',');
+        var points = new Array();
+        points.push(parseFloat(longLatArray[0]));
+        points.push(parseFloat(longLatArray[1]));
+        return points;
+    }
+
+    return false;
+}
+
+exports.mapJsonData = function (req, res) {    
+    loadData.load(function (groups) {        
+        var parser = new xml2js.Parser();
+        fs.readFile("./data/CCC_Data.KML", function (err, data) {
+            parser.parseString(data, function (err, result) {
+                var finalData = {
+                    type: "FeatureCollection",
+                    features: new Array()
+                };
+                result.kml.Folder[0].Placemark.forEach(function (placemark) {
+                    try {
+                        var groupIndex = _.find(groups, function (o) { return o.ccgcode == placemark.name[0] });                        
+                        var cccData = GetNewCccData(placemark.name[0], groupIndex);                        
+                        var coordinates = GetCoordinates(placemark);                                                
+                        coordinates.split('\n').forEach(function (splitOne) {
+                            var line = ConvertCoordinateLine(splitOne);     
+                            if (line){
+                                cccData.geometry.coordinates[0].push(line);
                             }
-                        });
-                        
+                        });                        
                         finalData.features.push(cccData);
                     }
-                catch (exx) {
+                    catch (exx) {
                         console.log(name + exx);
-                    }
-                }
+                    }                
+                });
+                res.send(finalData);
             });
-
-            console.log('Done');
-            res.send(finalData);
         });
-    });
     });
 }
