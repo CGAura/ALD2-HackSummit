@@ -2,24 +2,33 @@
 html
   head
     title
-    style
+    style.
+        body, html{
+            height:100%;
+            width:100%;
+            }
+        #MyGoogleMapID{
+            height:100%;
+            width:100%;
+        }
    body
-        div(id="map")
+        div(id="MyGoogleMapID")
         script.   
             function initMap() {
-              var map = new google.maps.Map(document.getElementById('map'), {
+              var map = new google.maps.Map(document.getElementById('MyGoogleMapID'), {
                 zoom: 11,
-                center: {lat: 41.876, lng: -87.624}
+                center: {lat: 51.50, lng: -0.127}
               });
               var ctaLayer = new google.maps.KmlLayer({
-                url: './CCC_Data.KML',
+                url: 'https://raw.githubusercontent.com/DannChewy/ALD2-HackSummit/master/ALD2.NodeJs/data/CCC_Data.KML',
                 map: map
               });
+              return true;
             }
             
         script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTbkoShScdbiTv3Zi3PfepjMoMyFTzbeY&callback=initMap")
         div
-            p 2
+            p hello world
 
 
 
