@@ -11,8 +11,7 @@
     "express": "3.4.4",
     "jade": "*",
     "stylus": "*",
-    "fast-csv":  "*"
-    "stylus": "*",
-    "fast-csv": "*"
+    "fast-csv":  "*",
+    "stylus": "*"
   }
 }
