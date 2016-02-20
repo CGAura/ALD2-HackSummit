@@ -24,32 +24,7 @@ html
         div(class="MapWrapper")
             div(id="MyGoogleMapID")
         div(id="MyInfo")
-        script.   
-            var map;
-            function initMap() {
-              map = new google.maps.Map(document.getElementById('MyGoogleMapID'), {
-                zoom: 11,
-                center: {lat: 51.50, lng: -0.127}
-              });
-              map.data.loadGeoJson('/KlmData/');
-
-              map.data.setStyle(function(feature) {
-                var color = feature.getProperty('color');
-                return {
-                    fillColor: color,
-                    strokeWeight: 0.5
-
-                 };
-              });
-
-              map.data.addListener('click', function(event) {
-                  document.getElementById('MyInfo').textContent =
-                  event.feature.getProperty('ccgCode');
-              });
-
-              return true;
-            }
-            
+        script(src="/javascripts/MapRender.js")           
         script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTbkoShScdbiTv3Zi3PfepjMoMyFTzbeY&callback=initMap")
         div
             p hello world
