@@ -7,12 +7,23 @@ html
             height:100%;
             width:100%;
             }
+        .MapWrapper{
+            width:70%;
+            height:100%;
+        }
         #MyGoogleMapID{
             height:100%;
             width:100%;
         }
+        #MyInfo {
+            width:20%;
+            float:right;
+        }
+
    body
-        div(id="MyGoogleMapID")
+        div(class="MapWrapper")
+            div(id="MyGoogleMapID")
+        div(id="MyInfo")
         script.   
             function initMap() {
               var map = new google.maps.Map(document.getElementById('MyGoogleMapID'), {
@@ -21,7 +32,12 @@ html
               });
               var ctaLayer = new google.maps.KmlLayer({
                 url: 'https://raw.githubusercontent.com/DannChewy/ALD2-HackSummit/master/ALD2.NodeJs/data/CCC_Data.KML',
-                map: map
+                map: map,
+                suppressInfoWindows: true
+              });
+              ctaLayer.addListener('click', function(kmlEvent) {
+                var text = kmlEvent.featureData.name;
+                document.getElementById('MyInfo').innerHTML = text;
               });
               return true;
             }
