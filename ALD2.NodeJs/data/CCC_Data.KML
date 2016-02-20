@@ -523,7 +523,7 @@
           <width>  1</width>
         </LineStyle>
         <PolyStyle>
-          <color>ff0000ff</color>
+          <color>FF00FF00</color>
           <colorMode>normal</colorMode>
           <fill>1</fill>
           <outline>1</outline>
