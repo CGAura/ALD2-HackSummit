@@ -4,13 +4,13 @@ var csv = require('fast-csv');
 module.exports = {
     load: function (success) {
         
-        var stream = fs.createReadStream("./data/AEWaitingTimes1215.csv");
+        var stream = fs.createReadStream("./data/CCGImmunisation.csv");
         var hospitals = Array();
 
     csv 
     .fromStream(stream, {headers : true})
     .on("data", function (data) {
-            hospitals.push(data.Name);
+            hospitals.push(data.ccgname);
         })
     .on("end", function () {
             success(hospitals);
