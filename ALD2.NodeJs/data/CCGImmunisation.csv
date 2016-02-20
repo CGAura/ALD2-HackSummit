@@ -1,211 +1,211 @@
-ccg code,ccgname,region, Dtap/IPV/Hib %,Men C %,PCV %,Hep B %
-07L,NHS BARKING AND DAGENHAM CCG,London Commissioning Region,86.0%,90.6%,87.3%,88.9%
-07M,NHS BARNET CCG,London Commissioning Region,84.5%,0.0%,83.7%,
-07N,NHS BEXLEY CCG,London Commissioning Region,93.5%,6.0%,93.5%,100.0%
-07P,NHS BRENT CCG,London Commissioning Region,92.7%,94.6%,92.6%,
-07Q,NHS BROMLEY CCG,London Commissioning Region,93.1%,94.9%,93.3%,100.0%
-07R,NHS CAMDEN CCG,London Commissioning Region,86.9%,89.7%,87.6%,50.0%
-07T,NHS CITY AND HACKNEY CCG,London Commissioning Region,84.5%,89.4%,84.7%,87.5%
-07V,NHS CROYDON CCG,London Commissioning Region,90.1%,93.0%,89.7%,100.0%
-07W,NHS EALING CCG,London Commissioning Region,81.8%,20.7%,73.0%,
-07X,NHS ENFIELD CCG,London Commissioning Region,85.3%,2.7%,84.3%,
-07Y,NHS HOUNSLOW CCG,London Commissioning Region,90.4%,92.9%,90.9%,50.0%
-08A,NHS GREENWICH CCG,London Commissioning Region,90.4%,8.2%,92.3%,69.2%
-08C,NHS HAMMERSMITH AND FULHAM CCG,London Commissioning Region,88.5%,0.0%,89.3%,
-08D,NHS HARINGEY CCG,London Commissioning Region,89.1%,91.9%,89.2%,
-08E,NHS HARROW CCG,London Commissioning Region,91.6%,94.3%,92.5%,
+ccgcode,ccgname,region,Dtap/IPV/Hib,MenC,PCV,HepB
+07L,NHS BARKING AND DAGENHAM CCG,London Commissioning Region,86.0,90.6,87.3,88.9
+07M,NHS BARNET CCG,London Commissioning Region,84.5,0.0,83.7,
+07N,NHS BEXLEY CCG,London Commissioning Region,93.5,6.0,93.5,100.0
+07P,NHS BRENT CCG,London Commissioning Region,92.7,94.6,92.6,
+07Q,NHS BROMLEY CCG,London Commissioning Region,93.1,94.9,93.3,100.0
+07R,NHS CAMDEN CCG,London Commissioning Region,86.9,89.7,87.6,50.0
+07T,NHS CITY AND HACKNEY CCG,London Commissioning Region,84.5,89.4,84.7,87.5
+07V,NHS CROYDON CCG,London Commissioning Region,90.1,93.0,89.7,100.0
+07W,NHS EALING CCG,London Commissioning Region,81.8,20.7,73.0,
+07X,NHS ENFIELD CCG,London Commissioning Region,85.3,2.7,84.3,
+07Y,NHS HOUNSLOW CCG,London Commissioning Region,90.4,92.9,90.9,50.0
+08A,NHS GREENWICH CCG,London Commissioning Region,90.4,8.2,92.3,69.2
+08C,NHS HAMMERSMITH AND FULHAM CCG,London Commissioning Region,88.5,0.0,89.3,
+08D,NHS HARINGEY CCG,London Commissioning Region,89.1,91.9,89.2,
+08E,NHS HARROW CCG,London Commissioning Region,91.6,94.3,92.5,
 08F,NHS HAVERING CCG,London Commissioning Region,,,,
-08G,NHS HILLINGDON CCG,London Commissioning Region,90.7%,93.3%,89.7%,83.3%
-08H,NHS ISLINGTON CCG,London Commissioning Region,95.3%,97.9%,95.4%,
-08J,NHS KINGSTON CCG,London Commissioning Region,94.3%,95.4%,94.2%,100.0%
-08K,NHS LAMBETH CCG,London Commissioning Region,93.3%,1.4%,93.4%,85.7%
-08L,NHS LEWISHAM CCG,London Commissioning Region,91.3%,12.3%,91.9%,100.0%
-08M,NHS NEWHAM CCG,London Commissioning Region,90.5%,4.5%,90.6%,88.2%
-08N,NHS REDBRIDGE CCG,London Commissioning Region,85.9%,88.3%,86.3%,77.8%
-08P,NHS RICHMOND CCG,London Commissioning Region,90.0%,93.0%,89.8%,
-08Q,NHS SOUTHWARK CCG,London Commissioning Region,90.7%,2.1%,90.6%,100.0%
-08R,NHS MERTON CCG,London Commissioning Region,91.7%,94.2%,92.3%,100.0%
-08T,NHS SUTTON CCG,London Commissioning Region,94.3%,97.0%,95.6%,100.0%
-08V,NHS TOWER HAMLETS CCG,London Commissioning Region,91.3%,91.6%,90.8%,100.0%
-08W,NHS WALTHAM FOREST CCG,London Commissioning Region,85.5%,83.6%,85.8%,83.3%
-08X,NHS WANDSWORTH CCG,London Commissioning Region,89.4%,1.6%,89.8%,0.0%
-08Y,NHS WEST LONDON (K&C & QPP) CCG,London Commissioning Region,83.9%,0.0%,83.6%,
-09A,NHS CENTRAL LONDON (WESTMINSTER) CCG,London Commissioning Region,86.4%,0.0%,85.8%,
-05A,NHS COVENTRY AND RUGBY CCG,Midlands and East of England Commissioning Region,97.1%,97.6%,96.9%,100.0%
-05F,NHS HEREFORDSHIRE CCG,Midlands and East of England Commissioning Region,93.0%,96.6%,93.2%,100.0%
-05H,NHS WARWICKSHIRE NORTH CCG,Midlands and East of England Commissioning Region,97.1%,99.0%,96.8%,
-05J,NHS REDDITCH AND BROMSGROVE CCG,Midlands and East of England Commissioning Region,94.8%,96.2%,94.8%,
+08G,NHS HILLINGDON CCG,London Commissioning Region,90.7,93.3,89.7,83.3
+08H,NHS ISLINGTON CCG,London Commissioning Region,95.3,97.9,95.4,
+08J,NHS KINGSTON CCG,London Commissioning Region,94.3,95.4,94.2,100.0
+08K,NHS LAMBETH CCG,London Commissioning Region,93.3,1.4,93.4,85.7
+08L,NHS LEWISHAM CCG,London Commissioning Region,91.3,12.3,91.9,100.0
+08M,NHS NEWHAM CCG,London Commissioning Region,90.5,4.5,90.6,88.2
+08N,NHS REDBRIDGE CCG,London Commissioning Region,85.9,88.3,86.3,77.8
+08P,NHS RICHMOND CCG,London Commissioning Region,90.0,93.0,89.8,
+08Q,NHS SOUTHWARK CCG,London Commissioning Region,90.7,2.1,90.6,100.0
+08R,NHS MERTON CCG,London Commissioning Region,91.7,94.2,92.3,100.0
+08T,NHS SUTTON CCG,London Commissioning Region,94.3,97.0,95.6,100.0
+08V,NHS TOWER HAMLETS CCG,London Commissioning Region,91.3,91.6,90.8,100.0
+08W,NHS WALTHAM FOREST CCG,London Commissioning Region,85.5,83.6,85.8,83.3
+08X,NHS WANDSWORTH CCG,London Commissioning Region,89.4,1.6,89.8,0.0
+08Y,NHS WEST LONDON (K&C & QPP) CCG,London Commissioning Region,83.9,0.0,83.6,
+09A,NHS CENTRAL LONDON (WESTMINSTER) CCG,London Commissioning Region,86.4,0.0,85.8,
+05A,NHS COVENTRY AND RUGBY CCG,Midlands and East of England Commissioning Region,97.1,97.6,96.9,100.0
+05F,NHS HEREFORDSHIRE CCG,Midlands and East of England Commissioning Region,93.0,96.6,93.2,100.0
+05H,NHS WARWICKSHIRE NORTH CCG,Midlands and East of England Commissioning Region,97.1,99.0,96.8,
+05J,NHS REDDITCH AND BROMSGROVE CCG,Midlands and East of England Commissioning Region,94.8,96.2,94.8,
 05R,NHS SOUTH WARWICKSHIRE CCG,Midlands and East of England Commissioning Region,,,,
-05T,NHS SOUTH WORCESTERSHIRE CCG,Midlands and East of England Commissioning Region,97.3%,98.1%,97.2%,
-06D,NHS WYRE FOREST CCG,Midlands and East of England Commissioning Region,96.1%,98.9%,96.5%,
-04X,NHS BIRMINGHAM SOUTH AND CENTRAL CCG,Midlands and East of England Commissioning Region,94.6%,97.2%,94.8%,
-05C,NHS DUDLEY CCG,Midlands and East of England Commissioning Region,96.7%,98.0%,97.0%,
-05L,NHS SANDWELL AND WEST BIRMINGHAM CCG,Midlands and East of England Commissioning Region,89.3%,38.9%,89.5%,0.0%
-05P,NHS SOLIHULL CCG,Midlands and East of England Commissioning Region,94.2%,4.2%,94.1%,
-05Y,NHS WALSALL CCG,Midlands and East of England Commissioning Region,96.7%,98.1%,96.8%,
-06A,NHS WOLVERHAMPTON CCG,Midlands and East of England Commissioning Region,95.2%,97.0%,96.1%,
-13P,NHS BIRMINGHAM CROSSCITY CCG,Midlands and East of England Commissioning Region,89.4%,93.8%,89.8%,
-03X,NHS EREWASH CCG,Midlands and East of England Commissioning Region,96.2%,96.2%,95.9%,
-03Y,NHS HARDWICK CCG,Midlands and East of England Commissioning Region,96.8%,98.6%,97.2%,
-04E,NHS MANSFIELD AND ASHFIELD CCG,Midlands and East of England Commissioning Region,96.1%,0.0%,95.6%,100.0%
-04H,NHS NEWARK & SHERWOOD CCG,Midlands and East of England Commissioning Region,97.1%,0.0%,97.1%,
-04J,NHS NORTH DERBYSHIRE CCG,Midlands and East of England Commissioning Region,97.1%,97.7%,96.5%,
-04K,NHS NOTTINGHAM CITY CCG,Midlands and East of England Commissioning Region,91.6%,94.4%,91.4%,100.0%
-04L,NHS NOTTINGHAM NORTH AND EAST CCG,Midlands and East of England Commissioning Region,92.5%,0.6%,92.5%,
-04M,NHS NOTTINGHAM WEST CCG,Midlands and East of England Commissioning Region,96.5%,0.8%,95.8%,100.0%
-04N,NHS RUSHCLIFFE CCG,Midlands and East of England Commissioning Region,95.8%,0.6%,94.8%,
-04R,NHS SOUTHERN DERBYSHIRE CCG,Midlands and East of England Commissioning Region,95.2%,96.9%,94.3%,
-06H,NHS CAMBRIDGESHIRE AND PETERBOROUGH CCG,Midlands and East of England Commissioning Region,95.4%,69.1%,95.4%,100.0%
-06L,NHS IPSWICH AND EAST SUFFOLK CCG,Midlands and East of England Commissioning Region,96.5%,97.2%,96.4%,100.0%
+05T,NHS SOUTH WORCESTERSHIRE CCG,Midlands and East of England Commissioning Region,97.3,98.1,97.2,
+06D,NHS WYRE FOREST CCG,Midlands and East of England Commissioning Region,96.1,98.9,96.5,
+04X,NHS BIRMINGHAM SOUTH AND CENTRAL CCG,Midlands and East of England Commissioning Region,94.6,97.2,94.8,
+05C,NHS DUDLEY CCG,Midlands and East of England Commissioning Region,96.7,98.0,97.0,
+05L,NHS SANDWELL AND WEST BIRMINGHAM CCG,Midlands and East of England Commissioning Region,89.3,38.9,89.5,0.0
+05P,NHS SOLIHULL CCG,Midlands and East of England Commissioning Region,94.2,4.2,94.1,
+05Y,NHS WALSALL CCG,Midlands and East of England Commissioning Region,96.7,98.1,96.8,
+06A,NHS WOLVERHAMPTON CCG,Midlands and East of England Commissioning Region,95.2,97.0,96.1,
+13P,NHS BIRMINGHAM CROSSCITY CCG,Midlands and East of England Commissioning Region,89.4,93.8,89.8,
+03X,NHS EREWASH CCG,Midlands and East of England Commissioning Region,96.2,96.2,95.9,
+03Y,NHS HARDWICK CCG,Midlands and East of England Commissioning Region,96.8,98.6,97.2,
+04E,NHS MANSFIELD AND ASHFIELD CCG,Midlands and East of England Commissioning Region,96.1,0.0,95.6,100.0
+04H,NHS NEWARK & SHERWOOD CCG,Midlands and East of England Commissioning Region,97.1,0.0,97.1,
+04J,NHS NORTH DERBYSHIRE CCG,Midlands and East of England Commissioning Region,97.1,97.7,96.5,
+04K,NHS NOTTINGHAM CITY CCG,Midlands and East of England Commissioning Region,91.6,94.4,91.4,100.0
+04L,NHS NOTTINGHAM NORTH AND EAST CCG,Midlands and East of England Commissioning Region,92.5,0.6,92.5,
+04M,NHS NOTTINGHAM WEST CCG,Midlands and East of England Commissioning Region,96.5,0.8,95.8,100.0
+04N,NHS RUSHCLIFFE CCG,Midlands and East of England Commissioning Region,95.8,0.6,94.8,
+04R,NHS SOUTHERN DERBYSHIRE CCG,Midlands and East of England Commissioning Region,95.2,96.9,94.3,
+06H,NHS CAMBRIDGESHIRE AND PETERBOROUGH CCG,Midlands and East of England Commissioning Region,95.4,69.1,95.4,100.0
+06L,NHS IPSWICH AND EAST SUFFOLK CCG,Midlands and East of England Commissioning Region,96.5,97.2,96.4,100.0
 06M,NHS GREAT YARMOUTH AND WAVENEY CCG,Midlands and East of England Commissioning Region,,,,
-06V,NHS NORTH NORFOLK CCG,Midlands and East of England Commissioning Region,98.2%,99.5%,97.9%,
-06W,NHS NORWICH CCG,Midlands and East of England Commissioning Region,95.9%,93.7%,95.7%,100.0%
-06Y,NHS SOUTH NORFOLK CCG,Midlands and East of England Commissioning Region,95.9%,96.8%,95.9%,100.0%
-07J,NHS WEST NORFOLK CCG,Midlands and East of England Commissioning Region,94.7%,95.6%,94.1%,100.0%
-07K,NHS WEST SUFFOLK CCG,Midlands and East of England Commissioning Region,95.3%,96.7%,95.3%,100.0%
-06Q,NHS MID ESSEX CCG,Midlands and East of England Commissioning Region,95.8%,97.1%,95.8%,93.8%
-06T,NHS NORTH EAST ESSEX CCG,Midlands and East of England Commissioning Region,94.8%,95.5%,94.7%,100.0%
-07G,NHS THURROCK CCG,Midlands and East of England Commissioning Region,94.7%,96.0%,94.1%,100.0%
-07H,NHS WEST ESSEX CCG,Midlands and East of England Commissioning Region,95.2%,96.1%,95.5%,100.0%
-99E,NHS BASILDON AND BRENTWOOD CCG,Midlands and East of England Commissioning Region,96.1%,97.2%,96.0%,100.0%
-99F,NHS CASTLE POINT AND ROCHFORD CCG,Midlands and East of England Commissioning Region,97.5%,98.5%,97.9%,100.0%
-99G,NHS SOUTHEND CCG,Midlands and East of England Commissioning Region,94.9%,97.5%,94.8%,100.0%
-03V,NHS CORBY CCG,Midlands and East of England Commissioning Region,96.6%,97.5%,95.8%,100.0%
-04F,NHS MILTON KEYNES CCG,Midlands and East of England Commissioning Region,97.2%,98.2%,97.7%,100.0%
-04G,NHS NENE CCG,Midlands and East of England Commissioning Region,96.8%,98.1%,96.7%,100.0%
-06F,NHS BEDFORDSHIRE CCG,Midlands and East of England Commissioning Region,95.9%,97.0%,95.7%,100.0%
-06K,NHS EAST AND NORTH HERTFORDSHIRE CCG,Midlands and East of England Commissioning Region,98.1%,98.2%,98.1%,100.0%
-06N,NHS HERTS VALLEYS CCG,Midlands and East of England Commissioning Region,94.2%,96.0%,94.6%,90.0%
-06P,NHS LUTON CCG,Midlands and East of England Commissioning Region,94.5%,95.7%,94.3%,100.0%
-03T,NHS LINCOLNSHIRE EAST CCG,Midlands and East of England Commissioning Region,94.6%,96.3%,94.8%,
-03W,NHS EAST LEICESTERSHIRE AND RUTLAND CCG,Midlands and East of England Commissioning Region,96.0%,97.2%,96.3%,0.0%
-04C,NHS LEICESTER CITY CCG,Midlands and East of England Commissioning Region,96.4%,97.3%,96.9%,0.0%
+06V,NHS NORTH NORFOLK CCG,Midlands and East of England Commissioning Region,98.2,99.5,97.9,
+06W,NHS NORWICH CCG,Midlands and East of England Commissioning Region,95.9,93.7,95.7,100.0
+06Y,NHS SOUTH NORFOLK CCG,Midlands and East of England Commissioning Region,95.9,96.8,95.9,100.0
+07J,NHS WEST NORFOLK CCG,Midlands and East of England Commissioning Region,94.7,95.6,94.1,100.0
+07K,NHS WEST SUFFOLK CCG,Midlands and East of England Commissioning Region,95.3,96.7,95.3,100.0
+06Q,NHS MID ESSEX CCG,Midlands and East of England Commissioning Region,95.8,97.1,95.8,93.8
+06T,NHS NORTH EAST ESSEX CCG,Midlands and East of England Commissioning Region,94.8,95.5,94.7,100.0
+07G,NHS THURROCK CCG,Midlands and East of England Commissioning Region,94.7,96.0,94.1,100.0
+07H,NHS WEST ESSEX CCG,Midlands and East of England Commissioning Region,95.2,96.1,95.5,100.0
+99E,NHS BASILDON AND BRENTWOOD CCG,Midlands and East of England Commissioning Region,96.1,97.2,96.0,100.0
+99F,NHS CASTLE POINT AND ROCHFORD CCG,Midlands and East of England Commissioning Region,97.5,98.5,97.9,100.0
+99G,NHS SOUTHEND CCG,Midlands and East of England Commissioning Region,94.9,97.5,94.8,100.0
+03V,NHS CORBY CCG,Midlands and East of England Commissioning Region,96.6,97.5,95.8,100.0
+04F,NHS MILTON KEYNES CCG,Midlands and East of England Commissioning Region,97.2,98.2,97.7,100.0
+04G,NHS NENE CCG,Midlands and East of England Commissioning Region,96.8,98.1,96.7,100.0
+06F,NHS BEDFORDSHIRE CCG,Midlands and East of England Commissioning Region,95.9,97.0,95.7,100.0
+06K,NHS EAST AND NORTH HERTFORDSHIRE CCG,Midlands and East of England Commissioning Region,98.1,98.2,98.1,100.0
+06N,NHS HERTS VALLEYS CCG,Midlands and East of England Commissioning Region,94.2,96.0,94.6,90.0
+06P,NHS LUTON CCG,Midlands and East of England Commissioning Region,94.5,95.7,94.3,100.0
+03T,NHS LINCOLNSHIRE EAST CCG,Midlands and East of England Commissioning Region,94.6,96.3,94.8,
+03W,NHS EAST LEICESTERSHIRE AND RUTLAND CCG,Midlands and East of England Commissioning Region,96.0,97.2,96.3,0.0
+04C,NHS LEICESTER CITY CCG,Midlands and East of England Commissioning Region,96.4,97.3,96.9,0.0
 04D,NHS LINCOLNSHIRE WEST CCG,Midlands and East of England Commissioning Region,,,,
 04Q,NHS SOUTH WEST LINCOLNSHIRE CCG,Midlands and East of England Commissioning Region,,,,
-04V,NHS WEST LEICESTERSHIRE CCG,Midlands and East of England Commissioning Region,95.6%,96.7%,96.1%,28.6%
+04V,NHS WEST LEICESTERSHIRE CCG,Midlands and East of England Commissioning Region,95.6,96.7,96.1,28.6
 99D,NHS SOUTH LINCOLNSHIRE CCG,Midlands and East of England Commissioning Region,,,,
-04Y,NHS CANNOCK CHASE CCG,Midlands and East of England Commissioning Region,98.9%,96.7%,95.3%,
-05D,NHS EAST STAFFORDSHIRE CCG,Midlands and East of England Commissioning Region,96.6%,94.1%,92.0%,
-05G,NHS NORTH STAFFORDSHIRE CCG,Midlands and East of England Commissioning Region,98.3%,99.6%,98.5%,
-05N,NHS SHROPSHIRE CCG,Midlands and East of England Commissioning Region,96.7%,98.1%,96.8%,
-05Q,NHS SOUTH EAST STAFFS AND SEISDON PENINSULAR CCG,Midlands and East of England Commissioning Region,97.6%,96.0%,95.2%,
-05V,NHS STAFFORD AND SURROUNDS CCG,Midlands and East of England Commissioning Region,97.5%,95.3%,92.2%,
-05W,NHS STOKE ON TRENT CCG,Midlands and East of England Commissioning Region,96.2%,97.9%,96.5%,100.0%
-05X,NHS TELFORD AND WREKIN CCG,Midlands and East of England Commissioning Region,96.5%,98.2%,96.5%,100.0%
-01C,NHS EASTERN CHESHIRE CCG,North of England Commissioning Region,97.0%,97.4%,96.1%,
-01R,NHS SOUTH CHESHIRE CCG,North of England Commissioning Region,94.3%,97.2%,95.2%,
-02D,NHS VALE ROYAL CCG,North of England Commissioning Region,97.7%,99.2%,98.1%,
-02E,NHS WARRINGTON CCG,North of England Commissioning Region,97.7%,98.0%,98.0%,
-02F,NHS WEST CHESHIRE CCG,North of England Commissioning Region,94.8%,97.5%,95.3%,
-12F,NHS WIRRAL CCG,North of England Commissioning Region,95.7%,98.0%,95.9%,100.0%
-13T,NHS NEWCASTLE GATESHEAD CCG,North of England Commissioning Region,94.3%,97.4%,93.7%,
-00L,NHS NORTHUMBERLAND CCG,North of England Commissioning Region,96.9%,0.0%,95.6%,
-00N,NHS SOUTH TYNESIDE CCG,North of England Commissioning Region,98.4%,99.5%,98.4%,
-00P,NHS SUNDERLAND CCG,North of England Commissioning Region,98.2%,0.0%,97.9%,0.0%
-01H,NHS CUMBRIA CCG,North of England Commissioning Region,95.7%,96.7%,95.7%,
-99C,NHS NORTH TYNESIDE CCG,North of England Commissioning Region,98.4%,0.3%,98.6%,
-00C,NHS DARLINGTON CCG,North of England Commissioning Region,95.8%,0.3%,95.1%,100.0%
-00D,"NHS DURHAM DALES, EASINGTON AND SEDGEFIELD CCG",North of England Commissioning Region,98.0%,0.0%,98.1%,100.0%
-00J,NHS NORTH DURHAM CCG,North of England Commissioning Region,98.5%,0.2%,98.3%,100.0%
-00K,NHS HARTLEPOOL AND STOCKTON-ON-TEES CCG,North of England Commissioning Region,94.9%,97.8%,95.7%,
-00M,NHS SOUTH TEES CCG,North of England Commissioning Region,95.2%,94.2%,95.7%,
-00T,NHS BOLTON CCG,North of England Commissioning Region,96.1%,1.6%,96.4%,50.0%
-00V,NHS BURY CCG,North of England Commissioning Region,96.9%,95.1%,92.4%,33.3%
-00W,NHS CENTRAL MANCHESTER CCG,North of England Commissioning Region,85.9%,91.0%,86.3%,66.7%
-00Y,NHS OLDHAM CCG,North of England Commissioning Region,98.4%,97.8%,96.8%,88.9%
-01D,"NHS HEYWOOD, MIDDLETON AND ROCHDALE CCG",North of England Commissioning Region,97.2%,97.1%,95.7%,66.7%
-01G,NHS SALFORD CCG,North of England Commissioning Region,97.2%,96.6%,95.0%,88.9%
-01M,NHS NORTH MANCHESTER CCG,North of England Commissioning Region,86.7%,92.5%,86.0%,66.7%
-01N,NHS SOUTH MANCHESTER CCG,North of England Commissioning Region,89.1%,93.1%,88.5%,100.0%
-01W,NHS STOCKPORT CCG,North of England Commissioning Region,89.2%,92.1%,89.1%,
-01Y,NHS TAMESIDE AND GLOSSOP CCG,North of England Commissioning Region,89.9%,92.1%,89.9%,40.0%
-02A,NHS TRAFFORD CCG,North of England Commissioning Region,98.5%,97.6%,96.6%,16.7%
-02H,NHS WIGAN BOROUGH CCG,North of England Commissioning Region,95.7%,98.0%,96.0%,
-00Q,NHS BLACKBURN WITH DARWEN CCG,North of England Commissioning Region,91.5%,96.2%,92.3%,
-00R,NHS BLACKPOOL CCG,North of England Commissioning Region,94.9%,97.6%,94.9%,
-00X,NHS CHORLEY AND SOUTH RIBBLE CCG,North of England Commissioning Region,97.1%,98.4%,97.3%,
-01A,NHS EAST LANCASHIRE CCG,North of England Commissioning Region,61.2%,77.4%,31.6%,
-01E,NHS GREATER PRESTON CCG,North of England Commissioning Region,88.7%,90.4%,88.6%,
-01K,NHS LANCASHIRE NORTH CCG,North of England Commissioning Region,96.0%,97.9%,95.5%,
-02G,NHS WEST LANCASHIRE CCG,North of England Commissioning Region,95.4%,97.3%,95.4%,
-02M,NHS FYLDE & WYRE CCG,North of England Commissioning Region,96.2%,97.8%,96.8%,
-01F,NHS HALTON CCG,North of England Commissioning Region,96.7%,98.3%,96.7%,
-01J,NHS KNOWSLEY CCG,North of England Commissioning Region,95.3%,97.8%,95.6%,
-01T,NHS SOUTH SEFTON CCG,North of England Commissioning Region,95.0%,95.5%,94.6%,100.0%
-01V,NHS SOUTHPORT AND FORMBY CCG,North of England Commissioning Region,95.5%,96.2%,95.8%,
-01X,NHS ST HELENS CCG,North of England Commissioning Region,92.3%,96.6%,92.5%,
-99A,NHS LIVERPOOL CCG,North of England Commissioning Region,94.7%,95.9%,94.6%,71.4%
-02Y,NHS EAST RIDING OF YORKSHIRE CCG,North of England Commissioning Region,97.2%,0.6%,97.4%,
-03D,"NHS HAMBLETON, RICHMONDSHIRE AND WHITBY CCG",North of England Commissioning Region,93.4%,94.5%,94.2%,
-03E,NHS HARROGATE AND RURAL DISTRICT CCG,North of England Commissioning Region,91.9%,94.6%,94.3%,
-03F,NHS HULL CCG,North of England Commissioning Region,94.7%,0.3%,94.5%,0.0%
-03H,NHS NORTH EAST LINCOLNSHIRE CCG,North of England Commissioning Region,97.8%,98.8%,97.8%,
-03K,NHS NORTH LINCOLNSHIRE CCG,North of England Commissioning Region,95.4%,0.5%,95.2%,100.0%
-03M,NHS SCARBOROUGH AND RYEDALE CCG,North of England Commissioning Region,95.0%,97.2%,95.6%,
-03Q,NHS VALE OF YORK CCG,North of England Commissioning Region,94.6%,92.8%,95.5%,
-02P,NHS BARNSLEY CCG,North of England Commissioning Region,97.1%,98.7%,96.9%,
-02Q,NHS BASSETLAW CCG,North of England Commissioning Region,93.3%,0.3%,93.6%,
-02X,NHS DONCASTER CCG,North of England Commissioning Region,95.7%,0.2%,93.8%,100.0%
-03L,NHS ROTHERHAM CCG,North of England Commissioning Region,95.2%,0.5%,95.7%,100.0%
-03N,NHS SHEFFIELD CCG,North of England Commissioning Region,93.9%,0.2%,93.9%,100.0%
-02N,"NHS AIREDALE, WHARFDALE AND CRAVEN CCG",North of England Commissioning Region,96.0%,97.8%,95.4%,
-02R,NHS BRADFORD DISTRICTS CCG,North of England Commissioning Region,95.6%,96.8%,95.2%,100.0%
-02T,NHS CALDERDALE CCG,North of England Commissioning Region,95.9%,95.9%,95.9%,
-02V,NHS LEEDS NORTH CCG,North of England Commissioning Region,95.7%,0.0%,95.4%,100.0%
-02W,NHS BRADFORD CITY CCG,North of England Commissioning Region,93.0%,95.8%,93.6%,100.0%
+04Y,NHS CANNOCK CHASE CCG,Midlands and East of England Commissioning Region,98.9,96.7,95.3,
+05D,NHS EAST STAFFORDSHIRE CCG,Midlands and East of England Commissioning Region,96.6,94.1,92.0,
+05G,NHS NORTH STAFFORDSHIRE CCG,Midlands and East of England Commissioning Region,98.3,99.6,98.5,
+05N,NHS SHROPSHIRE CCG,Midlands and East of England Commissioning Region,96.7,98.1,96.8,
+05Q,NHS SOUTH EAST STAFFS AND SEISDON PENINSULAR CCG,Midlands and East of England Commissioning Region,97.6,96.0,95.2,
+05V,NHS STAFFORD AND SURROUNDS CCG,Midlands and East of England Commissioning Region,97.5,95.3,92.2,
+05W,NHS STOKE ON TRENT CCG,Midlands and East of England Commissioning Region,96.2,97.9,96.5,100.0
+05X,NHS TELFORD AND WREKIN CCG,Midlands and East of England Commissioning Region,96.5,98.2,96.5,100.0
+01C,NHS EASTERN CHESHIRE CCG,North of England Commissioning Region,97.0,97.4,96.1,
+01R,NHS SOUTH CHESHIRE CCG,North of England Commissioning Region,94.3,97.2,95.2,
+02D,NHS VALE ROYAL CCG,North of England Commissioning Region,97.7,99.2,98.1,
+02E,NHS WARRINGTON CCG,North of England Commissioning Region,97.7,98.0,98.0,
+02F,NHS WEST CHESHIRE CCG,North of England Commissioning Region,94.8,97.5,95.3,
+12F,NHS WIRRAL CCG,North of England Commissioning Region,95.7,98.0,95.9,100.0
+13T,NHS NEWCASTLE GATESHEAD CCG,North of England Commissioning Region,94.3,97.4,93.7,
+00L,NHS NORTHUMBERLAND CCG,North of England Commissioning Region,96.9,0.0,95.6,
+00N,NHS SOUTH TYNESIDE CCG,North of England Commissioning Region,98.4,99.5,98.4,
+00P,NHS SUNDERLAND CCG,North of England Commissioning Region,98.2,0.0,97.9,0.0
+01H,NHS CUMBRIA CCG,North of England Commissioning Region,95.7,96.7,95.7,
+99C,NHS NORTH TYNESIDE CCG,North of England Commissioning Region,98.4,0.3,98.6,
+00C,NHS DARLINGTON CCG,North of England Commissioning Region,95.8,0.3,95.1,100.0
+00D,"NHS DURHAM DALES, EASINGTON AND SEDGEFIELD CCG",North of England Commissioning Region,98.0,0.0,98.1,100.0
+00J,NHS NORTH DURHAM CCG,North of England Commissioning Region,98.5,0.2,98.3,100.0
+00K,NHS HARTLEPOOL AND STOCKTON-ON-TEES CCG,North of England Commissioning Region,94.9,97.8,95.7,
+00M,NHS SOUTH TEES CCG,North of England Commissioning Region,95.2,94.2,95.7,
+00T,NHS BOLTON CCG,North of England Commissioning Region,96.1,1.6,96.4,50.0
+00V,NHS BURY CCG,North of England Commissioning Region,96.9,95.1,92.4,33.3
+00W,NHS CENTRAL MANCHESTER CCG,North of England Commissioning Region,85.9,91.0,86.3,66.7
+00Y,NHS OLDHAM CCG,North of England Commissioning Region,98.4,97.8,96.8,88.9
+01D,"NHS HEYWOOD, MIDDLETON AND ROCHDALE CCG",North of England Commissioning Region,97.2,97.1,95.7,66.7
+01G,NHS SALFORD CCG,North of England Commissioning Region,97.2,96.6,95.0,88.9
+01M,NHS NORTH MANCHESTER CCG,North of England Commissioning Region,86.7,92.5,86.0,66.7
+01N,NHS SOUTH MANCHESTER CCG,North of England Commissioning Region,89.1,93.1,88.5,100.0
+01W,NHS STOCKPORT CCG,North of England Commissioning Region,89.2,92.1,89.1,
+01Y,NHS TAMESIDE AND GLOSSOP CCG,North of England Commissioning Region,89.9,92.1,89.9,40.0
+02A,NHS TRAFFORD CCG,North of England Commissioning Region,98.5,97.6,96.6,16.7
+02H,NHS WIGAN BOROUGH CCG,North of England Commissioning Region,95.7,98.0,96.0,
+00Q,NHS BLACKBURN WITH DARWEN CCG,North of England Commissioning Region,91.5,96.2,92.3,
+00R,NHS BLACKPOOL CCG,North of England Commissioning Region,94.9,97.6,94.9,
+00X,NHS CHORLEY AND SOUTH RIBBLE CCG,North of England Commissioning Region,97.1,98.4,97.3,
+01A,NHS EAST LANCASHIRE CCG,North of England Commissioning Region,61.2,77.4,31.6,
+01E,NHS GREATER PRESTON CCG,North of England Commissioning Region,88.7,90.4,88.6,
+01K,NHS LANCASHIRE NORTH CCG,North of England Commissioning Region,96.0,97.9,95.5,
+02G,NHS WEST LANCASHIRE CCG,North of England Commissioning Region,95.4,97.3,95.4,
+02M,NHS FYLDE & WYRE CCG,North of England Commissioning Region,96.2,97.8,96.8,
+01F,NHS HALTON CCG,North of England Commissioning Region,96.7,98.3,96.7,
+01J,NHS KNOWSLEY CCG,North of England Commissioning Region,95.3,97.8,95.6,
+01T,NHS SOUTH SEFTON CCG,North of England Commissioning Region,95.0,95.5,94.6,100.0
+01V,NHS SOUTHPORT AND FORMBY CCG,North of England Commissioning Region,95.5,96.2,95.8,
+01X,NHS ST HELENS CCG,North of England Commissioning Region,92.3,96.6,92.5,
+99A,NHS LIVERPOOL CCG,North of England Commissioning Region,94.7,95.9,94.6,71.4
+02Y,NHS EAST RIDING OF YORKSHIRE CCG,North of England Commissioning Region,97.2,0.6,97.4,
+03D,"NHS HAMBLETON, RICHMONDSHIRE AND WHITBY CCG",North of England Commissioning Region,93.4,94.5,94.2,
+03E,NHS HARROGATE AND RURAL DISTRICT CCG,North of England Commissioning Region,91.9,94.6,94.3,
+03F,NHS HULL CCG,North of England Commissioning Region,94.7,0.3,94.5,0.0
+03H,NHS NORTH EAST LINCOLNSHIRE CCG,North of England Commissioning Region,97.8,98.8,97.8,
+03K,NHS NORTH LINCOLNSHIRE CCG,North of England Commissioning Region,95.4,0.5,95.2,100.0
+03M,NHS SCARBOROUGH AND RYEDALE CCG,North of England Commissioning Region,95.0,97.2,95.6,
+03Q,NHS VALE OF YORK CCG,North of England Commissioning Region,94.6,92.8,95.5,
+02P,NHS BARNSLEY CCG,North of England Commissioning Region,97.1,98.7,96.9,
+02Q,NHS BASSETLAW CCG,North of England Commissioning Region,93.3,0.3,93.6,
+02X,NHS DONCASTER CCG,North of England Commissioning Region,95.7,0.2,93.8,100.0
+03L,NHS ROTHERHAM CCG,North of England Commissioning Region,95.2,0.5,95.7,100.0
+03N,NHS SHEFFIELD CCG,North of England Commissioning Region,93.9,0.2,93.9,100.0
+02N,"NHS AIREDALE, WHARFDALE AND CRAVEN CCG",North of England Commissioning Region,96.0,97.8,95.4,
+02R,NHS BRADFORD DISTRICTS CCG,North of England Commissioning Region,95.6,96.8,95.2,100.0
+02T,NHS CALDERDALE CCG,North of England Commissioning Region,95.9,95.9,95.9,
+02V,NHS LEEDS NORTH CCG,North of England Commissioning Region,95.7,0.0,95.4,100.0
+02W,NHS BRADFORD CITY CCG,North of England Commissioning Region,93.0,95.8,93.6,100.0
 03A,NHS GREATER HUDDERSFIELD CCG,North of England Commissioning Region,,,,
-03C,NHS LEEDS WEST CCG,North of England Commissioning Region,94.8%,0.8%,94.8%,100.0%
-03G,NHS LEEDS SOUTH AND EAST CCG,North of England Commissioning Region,95.0%,0.4%,94.3%,100.0%
-03J,NHS NORTH KIRKLEES CCG,North of England Commissioning Region,96.9%,0.0%,96.6%,100.0%
-03R,NHS WAKEFIELD CCG,North of England Commissioning Region,93.9%,0.2%,95.1%,
-11E,NHS BATH AND NORTH EAST SOMERSET CCG,South of England Commissioning Region,95.5%,96.5%,95.5%,
+03C,NHS LEEDS WEST CCG,North of England Commissioning Region,94.8,0.8,94.8,100.0
+03G,NHS LEEDS SOUTH AND EAST CCG,North of England Commissioning Region,95.0,0.4,94.3,100.0
+03J,NHS NORTH KIRKLEES CCG,North of England Commissioning Region,96.9,0.0,96.6,100.0
+03R,NHS WAKEFIELD CCG,North of England Commissioning Region,93.9,0.2,95.1,
+11E,NHS BATH AND NORTH EAST SOMERSET CCG,South of England Commissioning Region,95.5,96.5,95.5,
 11M,NHS GLOUCESTERSHIRE CCG,South of England Commissioning Region,,,,
-12D,NHS SWINDON CCG,South of England Commissioning Region,95.5%,96.2%,94.7%,
-99N,NHS WILTSHIRE CCG,South of England Commissioning Region,95.0%,97.7%,95.3%,100.0%
-11H,NHS BRISTOL CCG,South of England Commissioning Region,94.9%,96.5%,95.0%,83.3%
-11T,NHS NORTH SOMERSET CCG,South of England Commissioning Region,96.3%,97.8%,96.5%,
-11X,NHS SOMERSET CCG,South of England Commissioning Region,94.5%,96.4%,94.7%,
-12A,NHS SOUTH GLOUCESTERSHIRE CCG,South of England Commissioning Region,96.7%,98.1%,96.8%,
-11N,NHS KERNOW CCG,South of England Commissioning Region,92.2%,94.3%,92.3%,100.0%
-99P,"NHS NORTH, EAST, WEST DEVON CCG",South of England Commissioning Region,93.0%,96.5%,93.6%,100.0%
-99Q,NHS SOUTH DEVON AND TORBAY CCG,South of England Commissioning Region,95.2%,97.3%,95.2%,
-09C,NHS ASHFORD CCG,South of England Commissioning Region,87.0%,94.6%,89.1%,100.0%
-09E,NHS CANTERBURY AND COASTAL CCG,South of England Commissioning Region,85.7%,92.1%,86.3%,
-09J,"NHS DARTFORD, GRAVESHAM AND SWANLEY CCG",South of England Commissioning Region,89.3%,93.1%,89.7%,100.0%
-09W,NHS MEDWAY CCG,South of England Commissioning Region,86.0%,90.8%,86.2%,100.0%
-10A,NHS SOUTH KENT COAST CCG,South of England Commissioning Region,90.1%,93.9%,90.3%,100.0%
-10D,NHS SWALE CCG,South of England Commissioning Region,91.6%,95.3%,91.9%,100.0%
-10E,NHS THANET CCG,South of England Commissioning Region,87.6%,92.5%,88.1%,100.0%
-99J,NHS WEST KENT CCG,South of England Commissioning Region,87.5%,91.6%,88.6%,100.0%
-09D,NHS BRIGHTON AND HOVE CCG,South of England Commissioning Region,92.8%,0.2%,92.6%,
-09F,"NHS EASTBOURNE, HAILSHAM AND SEAFORD CCG",South of England Commissioning Region,96.0%,96.8%,96.0%,
-09G,NHS COASTAL WEST SUSSEX CCG,South of England Commissioning Region,86.2%,0.0%,86.9%,
-09H,NHS CRAWLEY CCG,South of England Commissioning Region,95.1%,0.0%,95.4%,
-09L,NHS EAST SURREY CCG,South of England Commissioning Region,78.7%,0.5%,79.4%,
-09N,NHS GUILDFORD AND WAVERLEY CCG,South of England Commissioning Region,85.1%,1.5%,86.0%,100.0%
-09P,NHS HASTINGS AND ROTHER CCG,South of England Commissioning Region,92.3%,96.5%,92.3%,100.0%
-09X,NHS HORSHAM AND MID SUSSEX CCG,South of England Commissioning Region,95.1%,0.2%,94.5%,
-09Y,NHS NORTH WEST SURREY CCG,South of England Commissioning Region,85.8%,1.8%,88.4%,
-10C,NHS SURREY HEATH CCG,South of England Commissioning Region,90.7%,1.1%,92.9%,
-99H,NHS SURREY DOWNS CCG,South of England Commissioning Region,86.7%,86.1%,87.3%,
-99K,NHS HIGH WEALD LEWES HAVENS CCG,South of England Commissioning Region,91.8%,93.1%,91.5%,100.0%
-10G,NHS BRACKNELL AND ASCOT CCG,South of England Commissioning Region,95.4%,95.6%,95.2%,100.0%
-10H,NHS CHILTERN CCG,South of England Commissioning Region,95.7%,97.1%,96.2%,
-10M,NHS NEWBURY AND DISTRICT CCG,South of England Commissioning Region,95.3%,94.4%,95.3%,100.0%
-10N,NHS NORTH & WEST READING CCG,South of England Commissioning Region,90.9%,92.7%,91.5%,75.0%
-10Q,NHS OXFORDSHIRE CCG,South of England Commissioning Region,96.4%,97.0%,96.2%,100.0%
-10T,NHS SLOUGH CCG,South of England Commissioning Region,93.2%,94.2%,92.8%,100.0%
-10W,NHS SOUTH READING CCG,South of England Commissioning Region,88.4%,90.7%,86.3%,85.7%
-10Y,NHS AYLESBURY VALE CCG,South of England Commissioning Region,94.8%,96.6%,95.1%,100.0%
-11C,"NHS WINDSOR, ASCOT AND MAIDENHEAD CCG",South of England Commissioning Region,93.2%,95.0%,93.2%,100.0%
-11D,NHS WOKINGHAM CCG,South of England Commissioning Region,88.3%,91.5%,88.7%,100.0%
-10J,NHS NORTH HAMPSHIRE CCG,South of England Commissioning Region,96.2%,97.6%,96.3%,100.0%
-10K,NHS FAREHAM AND GOSPORT CCG,South of England Commissioning Region,94.3%,95.0%,94.5%,
-10L,NHS ISLE OF WIGHT CCG,South of England Commissioning Region,87.8%,92.0%,88.7%,
+12D,NHS SWINDON CCG,South of England Commissioning Region,95.5,96.2,94.7,
+99N,NHS WILTSHIRE CCG,South of England Commissioning Region,95.0,97.7,95.3,100.0
+11H,NHS BRISTOL CCG,South of England Commissioning Region,94.9,96.5,95.0,83.3
+11T,NHS NORTH SOMERSET CCG,South of England Commissioning Region,96.3,97.8,96.5,
+11X,NHS SOMERSET CCG,South of England Commissioning Region,94.5,96.4,94.7,
+12A,NHS SOUTH GLOUCESTERSHIRE CCG,South of England Commissioning Region,96.7,98.1,96.8,
+11N,NHS KERNOW CCG,South of England Commissioning Region,92.2,94.3,92.3,100.0
+99P,"NHS NORTH, EAST, WEST DEVON CCG",South of England Commissioning Region,93.0,96.5,93.6,100.0
+99Q,NHS SOUTH DEVON AND TORBAY CCG,South of England Commissioning Region,95.2,97.3,95.2,
+09C,NHS ASHFORD CCG,South of England Commissioning Region,87.0,94.6,89.1,100.0
+09E,NHS CANTERBURY AND COASTAL CCG,South of England Commissioning Region,85.7,92.1,86.3,
+09J,"NHS DARTFORD, GRAVESHAM AND SWANLEY CCG",South of England Commissioning Region,89.3,93.1,89.7,100.0
+09W,NHS MEDWAY CCG,South of England Commissioning Region,86.0,90.8,86.2,100.0
+10A,NHS SOUTH KENT COAST CCG,South of England Commissioning Region,90.1,93.9,90.3,100.0
+10D,NHS SWALE CCG,South of England Commissioning Region,91.6,95.3,91.9,100.0
+10E,NHS THANET CCG,South of England Commissioning Region,87.6,92.5,88.1,100.0
+99J,NHS WEST KENT CCG,South of England Commissioning Region,87.5,91.6,88.6,100.0
+09D,NHS BRIGHTON AND HOVE CCG,South of England Commissioning Region,92.8,0.2,92.6,
+09F,"NHS EASTBOURNE, HAILSHAM AND SEAFORD CCG",South of England Commissioning Region,96.0,96.8,96.0,
+09G,NHS COASTAL WEST SUSSEX CCG,South of England Commissioning Region,86.2,0.0,86.9,
+09H,NHS CRAWLEY CCG,South of England Commissioning Region,95.1,0.0,95.4,
+09L,NHS EAST SURREY CCG,South of England Commissioning Region,78.7,0.5,79.4,
+09N,NHS GUILDFORD AND WAVERLEY CCG,South of England Commissioning Region,85.1,1.5,86.0,100.0
+09P,NHS HASTINGS AND ROTHER CCG,South of England Commissioning Region,92.3,96.5,92.3,100.0
+09X,NHS HORSHAM AND MID SUSSEX CCG,South of England Commissioning Region,95.1,0.2,94.5,
+09Y,NHS NORTH WEST SURREY CCG,South of England Commissioning Region,85.8,1.8,88.4,
+10C,NHS SURREY HEATH CCG,South of England Commissioning Region,90.7,1.1,92.9,
+99H,NHS SURREY DOWNS CCG,South of England Commissioning Region,86.7,86.1,87.3,
+99K,NHS HIGH WEALD LEWES HAVENS CCG,South of England Commissioning Region,91.8,93.1,91.5,100.0
+10G,NHS BRACKNELL AND ASCOT CCG,South of England Commissioning Region,95.4,95.6,95.2,100.0
+10H,NHS CHILTERN CCG,South of England Commissioning Region,95.7,97.1,96.2,
+10M,NHS NEWBURY AND DISTRICT CCG,South of England Commissioning Region,95.3,94.4,95.3,100.0
+10N,NHS NORTH & WEST READING CCG,South of England Commissioning Region,90.9,92.7,91.5,75.0
+10Q,NHS OXFORDSHIRE CCG,South of England Commissioning Region,96.4,97.0,96.2,100.0
+10T,NHS SLOUGH CCG,South of England Commissioning Region,93.2,94.2,92.8,100.0
+10W,NHS SOUTH READING CCG,South of England Commissioning Region,88.4,90.7,86.3,85.7
+10Y,NHS AYLESBURY VALE CCG,South of England Commissioning Region,94.8,96.6,95.1,100.0
+11C,"NHS WINDSOR, ASCOT AND MAIDENHEAD CCG",South of England Commissioning Region,93.2,95.0,93.2,100.0
+11D,NHS WOKINGHAM CCG,South of England Commissioning Region,88.3,91.5,88.7,100.0
+10J,NHS NORTH HAMPSHIRE CCG,South of England Commissioning Region,96.2,97.6,96.3,100.0
+10K,NHS FAREHAM AND GOSPORT CCG,South of England Commissioning Region,94.3,95.0,94.5,
+10L,NHS ISLE OF WIGHT CCG,South of England Commissioning Region,87.8,92.0,88.7,
 10R,NHS PORTSMOUTH CCG,South of England Commissioning Region,,,,
-10V,NHS SOUTH EASTERN HAMPSHIRE CCG,South of England Commissioning Region,95.3%,96.7%,94.7%,
-10X,NHS SOUTHAMPTON CCG,South of England Commissioning Region,95.5%,96.2%,95.8%,100.0%
-11A,NHS WEST HAMPSHIRE CCG,South of England Commissioning Region,95.9%,96.1%,95.7%,100.0%
-11J,NHS DORSET CCG,South of England Commissioning Region,96.0%,97.1%,96.2%,100.0%
-99M,NHS NORTH EAST HAMPSHIRE AND FARNHAM CCG,South of England Commissioning Region,88.0%,74.9%,89.6%,100.0%
-X24,NHS ENGLAND,N/A,96.8%,96.0%,96.8%,100.0%
+10V,NHS SOUTH EASTERN HAMPSHIRE CCG,South of England Commissioning Region,95.3,96.7,94.7,
+10X,NHS SOUTHAMPTON CCG,South of England Commissioning Region,95.5,96.2,95.8,100.0
+11A,NHS WEST HAMPSHIRE CCG,South of England Commissioning Region,95.9,96.1,95.7,100.0
+11J,NHS DORSET CCG,South of England Commissioning Region,96.0,97.1,96.2,100.0
+99M,NHS NORTH EAST HAMPSHIRE AND FARNHAM CCG,South of England Commissioning Region,88.0,74.9,89.6,100.0
+X24,NHS ENGLAND,N/A,96.8,96.0,96.8,100.0

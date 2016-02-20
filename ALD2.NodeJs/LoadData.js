@@ -10,6 +10,20 @@ module.exports = {
     csv 
     .fromStream(stream, {headers : true})
     .on("data", function (data) {
+
+            data.colour = "#ff000000";
+
+            var floatMenC = parseFloat(data.MenC);
+
+            if (floatMenC > 90.0) {
+                data.colour = "#00ff0000";
+            } else if (floatMenC > 60) {
+                data.colour = "#f2ff0000";
+            }
+            else if (floatMenC > 30) {
+                data.colour = "#ffbb0000";
+            }
+
             groups.push(data);
         })
     .on("end", function () {
