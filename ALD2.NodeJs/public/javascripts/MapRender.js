@@ -29,7 +29,7 @@ function changeColor(colorProp) {
         var color = feature.getProperty(colorProp)
         return {
             fillColor : color,
-            strokeWeigth: 0.75
+            strokeWeight: 0.75
         };
     });
 
