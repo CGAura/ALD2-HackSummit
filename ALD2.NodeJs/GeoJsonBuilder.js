@@ -77,15 +77,19 @@ var utils = {
             },
             properties: {
                 ccgCode: name,
-                color: utils.getGroupColor(groupIndex)
+                color: utils.getGroupColor(groupIndex, 'color'),
+                mencColor: utils.getGroupColor(groupIndex, 'menCColor'),
+                dtapColor: utils.getGroupColor(groupIndex, 'dtapColor'),
+                hepbColor: utils.getGroupColor(groupIndex, 'hepBColor'),
+                pvcColor: utils.getGroupColor(groupIndex, 'pvcColor')
             }
         };
         return data;
     },
-    getGroupColor: function (groupIndex) {
+    getGroupColor: function (groupIndex, vaccName) {
         var setColor = '#888888';
         if (groupIndex) {
-            setColor = groupIndex.color;
+            setColor = groupIndex[vaccName];
         }
         return setColor;
     }

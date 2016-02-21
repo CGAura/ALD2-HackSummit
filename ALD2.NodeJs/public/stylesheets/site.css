@@ -50,6 +50,7 @@
             flex: 0 1 40px;
         }
 
+
 .MapWrapper {
     height: 100%;
 }
@@ -65,4 +66,12 @@
 
 .fill {
     height: 100%;
+}
+
+.btn {
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 8px 0 black;
 }

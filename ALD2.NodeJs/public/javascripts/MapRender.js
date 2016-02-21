@@ -22,3 +22,16 @@ function initMap() {
     
     return true;
 }
+
+function changeColor(colorProp) {
+    
+    map.data.setStyle(function (feature) {
+        var color = feature.getProperty(colorProp)
+        return {
+            fillColor : color,
+            strokeWeigth: 0.75
+        };
+    });
+
+    return true;
+}
