@@ -77,7 +77,7 @@ var utils = {
             },
             properties: {
                 ccgCode: name,
-                color: utils.getGroupColor(groupIndex, 'color'),
+                averageColor: utils.getGroupColor(groupIndex, 'color'),
                 mencColor: utils.getGroupColor(groupIndex, 'menCColor'),
                 dtapColor: utils.getGroupColor(groupIndex, 'dtapColor'),
                 hepbColor: utils.getGroupColor(groupIndex, 'hepBColor'),
