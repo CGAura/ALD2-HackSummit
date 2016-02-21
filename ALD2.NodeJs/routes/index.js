@@ -8,8 +8,7 @@ exports.index = function (req, res) {
                 res
                 .write(group.ccgname + " " + group.colour + "\n");
             }
-        );
-        
+        );        
         res.end();
 
     });
