@@ -99,7 +99,10 @@ function colorControl(controlDiv, color, text) {
 }
 
 function selectControl(controlDiv, color, text, vaccType) {
-    controlDiv.style.padding = '1px';
+    controlDiv.style.paddingLeft = '1px';
+    controlDiv.style.paddingRight = '1px';
+    controlDiv.style.paddingBottom = '15px';
+
     var controlUI = document.createElement('div');
     controlUI.style.backgroundColor = color;
     controlUI.style.border = '1px solid';
