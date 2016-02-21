@@ -3,12 +3,14 @@
 function initMap() {
     map = new google.maps.Map(document.getElementById('MyGoogleMapID'), {
         zoom: 7,
-        center: { lat: 52.95, lng: -1.13333 }
+        center: { lat: 52.95, lng: -1.13333 },
+        streetViewControl: false,
+        mapTypeControl: false
     });
     map.data.loadGeoJson('/KlmData/');
     
     map.data.setStyle(function (feature) {
-        var color = feature.getProperty('color');
+        var color = feature.getProperty('averageColor');
         return {
             fillColor: color,
             strokeWeight: 0.75
@@ -20,41 +22,12 @@ function initMap() {
                   event.feature.getProperty('ccgCode');
     });
     
-    createVaccineControls();
+    createVaccineControls(map);
     
     createColorKey();
     
     return true;
 }
-
-
-function createVaccineControls() {
-    
-    var index = 1
-    addNewVaccineControl(index, 'white', 'Men C', 'mencColor');
-    
-    index += 1;
-    addNewVaccineControl(index, 'white', 'DTAP', 'dtapColor');
-    
-    index += 1;
-    addNewVaccineControl(index, 'white', 'Hep B', 'hepbColor');
-        
-    index += 1;
-    addNewVaccineControl(index, 'white', 'PVC', 'pvcColor');
-
-    index += 1;
-    addNewVaccineControl(index, 'white', 'Average', 'color');
-
-}
-
-function addNewVaccineControl(index, color, id, vaccType) {
-    
-    var controllerDiv = document.createElement('div');
-    var Controller = new selectControl(controllerDiv, color, id, vaccType);
-    controllerDiv.index = index;
-    map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(controllerDiv);
-}
-
 
 function createColorKey() {
     
@@ -84,66 +57,92 @@ function addNewColorKeyControl(index, color, id) {
 function colorControl(controlDiv, color, text) {
     controlDiv.style.padding = '1px';
     var controlUI = document.createElement('div');
+    controlUI.id = 'colorUI';
     controlUI.style.backgroundColor = color;
-    controlUI.style.border = '1px solid';
-    controlUI.style.cursor = 'pointer';
-    controlUI.style.textAlign = 'center';
     controlDiv.appendChild(controlUI);
     var controlText = document.createElement('div');
-    controlText.style.fontFamily = 'Arial,sans-serif';
-    controlText.style.fontSize = '12px';
-    controlText.style.paddingLeft = '4px';
-    controlText.style.paddingRight = '4px';
+    controlText.id = "colorText";    
     controlText.innerHTML = text;
     controlUI.appendChild(controlText);
 }
 
-function selectControl(controlDiv, color, text, vaccType) {
-    controlDiv.style.paddingLeft = '1px';
-    controlDiv.style.paddingRight = '1px';
-    controlDiv.style.paddingBottom = '15px';
+
+function createVaccineControls(map) {
+    
+    
+    var controllerDiv = document.createElement('div');
+    var Controller = new SelectControl(controllerDiv, map);
+    controllerDiv.index = 1;
+    controllerDiv.style.paddingBottom = '15px';
+    map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(controllerDiv);
+ 
+}
+
+var mencControlUI;
+var dtapControlUI;
+var hepbControlUI;
+var pvcControlUI;
+var averageControlUI;
+
+function SelectControl(controlDiv, map) {
+    
+    var control = this;
+    control.active_ = 'average';
+    
+    mencControlUI = addSelectControlItem(control, controlDiv, 'menc', 'Men C', 'Click to show Meningiti C Vaccine Stats',  'white');
+    dtapControlUI = addSelectControlItem(control, controlDiv, 'dtap', 'DTap', 'Click to show diphtheria, pertussis, and tetanus Vaccine Stats', 'white');
+    hepbControlUI = addSelectControlItem(control, controlDiv, 'hepb', 'Hep B', 'Click to show Hepatitis Vaccine Stats', 'white');    
+    pvcControlUI = addSelectControlItem(control, controlDiv, 'pvc', 'PVC', 'Click to show Pneumococcal conjugate Vaccine Stats', 'white');    
+    averageControlUI = addSelectControlItem(control, controlDiv, 'average', 'Averages', 'Click to show Average over all Vaccine Stats', 'lightblue');
+}
+
+function addSelectControlItem(control, controlDiv, id, text, title, backgroundColor) {
 
     var controlUI = document.createElement('div');
-    controlUI.style.backgroundColor = color;
-    controlUI.style.border = '1px solid';
-    controlUI.style.cursor = 'pointer';
-    controlUI.style.textAlign = 'center';
+    controlUI.id = 'controlUI';
+    controlUI.title = title;
+    controlUI.style.backgroundColor = backgroundColor;
     controlDiv.appendChild(controlUI);
+    
     var controlText = document.createElement('div');
-    controlText.style.fontFamily = 'Arial,sans-serif';
-    controlText.style.fontSize = '12px';
-    controlText.style.paddingLeft = '4px';
-    controlText.style.paddingRight = '4px';
     controlText.innerHTML = text;
+    controlText.id =  'controlText';
     controlUI.appendChild(controlText);
-
+        
     controlUI.addEventListener('click', function () {
+                
+        mencControlUI.style.backgroundColor = 'white';
+        dtapControlUI.style.backgroundColor = 'white';
+        pvcControlUI.style.backgroundColor = 'white';
+        hepbControlUI.style.backgroundColor = 'white';
+        averageControlUI.style.backgroundColor = 'white';
+        
+        switch (id) {
+            case 'menc':
+                mencControlUI.style.backgroundColor = 'lightblue';
+                break;
+            case 'dtap':
+                dtapControlUI.style.backgroundColor = 'lightblue';
+                break;
+            case 'pvc':
+                pvcControlUI.style.backgroundColor = 'lightblue';
+                break;
+            case 'hepb':
+                hepbControlUI.style.backgroundColor = 'lightblue';
+                break;            
+            case 'average':
+                averageControlUI.style.backgroundColor = 'lightblue';
+                break;
+        }
         
         map.data.setStyle(function (feature) {
-            var color = feature.getProperty(vaccType)
+            var color = feature.getProperty(id + 'Color')
             return {
                 fillColor : color,
                 strokeWeight: 0.75
             };
         });
     });
-        
-    controlUI.addEventListener('mouseover', function () {
-        controlUI.style.backgroundColor = 'lightgrey';
-    });
 
-    controlUI.addEventListener('mouseout', function () {
-        controlUI.style.backgroundColor = color;
-    });
-
-    controlUI.addEventListener('mousedown', function () {
-        controlUI.style.backgroundColor = 'lightblue';
-    });
-    
-    controlUI.addEventListener('mouseup', function () {
-        controlUI.style.backgroundColor = color;
-    });
+    return controlUI
 }
-
-
-
