@@ -5,7 +5,11 @@ function initMap() {
         zoom: 7,
         center: { lat: 52.95, lng: -1.13333 },
         streetViewControl: false,
-        mapTypeControl: false
+        mapTypeControl: false,
+        zoomControl: true,
+        zoomControlOptions: {
+            position:google.maps.ControlPosition.TOP_LEFT
+        }
     });
     map.data.loadGeoJson('/KlmData/');
     
