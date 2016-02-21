@@ -10,27 +10,44 @@ module.exports = {
     csv 
     .fromStream(stream, {headers : true})
     .on("data", function (data) {
-
-            data.colour = "#ff0000";
-
+            //Dtap/IPV/Hib,MenC,PCV,HepB
             var floatMenC = parseFloat(data.MenC);
+            var floatDtap = parseFloat(data.Dtap);
+            var floatPCV = parseFloat(data.PCV);
+            var floatHepB = parseFloat(data.HepB);
 
-            if (floatMenC > 90.0) {
-                data.colour = "#00ff00";
-            } else if (floatMenC > 60) {
-                data.colour = "#f2ff00";
-            }
-            else if (floatMenC > 30) {
-                data.colour = "#ffbb00";
-            }
-
+            data.menCColor = utils.setColor(floatMenC);
+            data.dtapColor = utils.setColor(floatDtap);
+            data.pvcColor = utils.setColor(floatPCV);
+            data.hepBColor = utils.setColor(floatHepB);
+            data.color = utils.setColor(utils.getAverageColor(floatMenC, floatDtap, floatPCV, floatHepB));
             groups.push(data);
         })
     .on("end", function () {
             success(groups);
         });
     }
-};
+}
+
+var utils = {
+    setColor: function (percent){
+
+        var color = "#ff0000";
+
+        if (percent > 90.0) {
+            color = "#00ff00";
+        } else if (percent > 60) {
+            color = "#f2ff00";
+        }
+        else if (percent > 30) {
+            color = "#ffbb00";
+        }
+        return color 
+    },
+    getAverageColor: function (menC, Dtap, PCV, HepB){
+        return (menC + Dtap + PCV + HepB) / 4;
+    }
+}
 
 
 

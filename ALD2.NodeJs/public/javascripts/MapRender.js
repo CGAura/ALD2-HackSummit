@@ -2,8 +2,8 @@
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('MyGoogleMapID'), {
-        zoom: 11,
-        center: { lat: 51.50, lng: -0.127 }
+        zoom: 7,
+        center: { lat: 52.95, lng: -1.13333 }
     });
     map.data.loadGeoJson('/KlmData/');
     
@@ -11,7 +11,7 @@ function initMap() {
         var color = feature.getProperty('color');
         return {
             fillColor: color,
-            strokeWeight: 0.5
+            strokeWeight: 0.75
         };
     });
     

@@ -85,7 +85,7 @@ var utils = {
     getGroupColor: function (groupIndex) {
         var setColor = '#888888';
         if (groupIndex) {
-            setColor = groupIndex.colour;
+            setColor = groupIndex.color;
         }
         return setColor;
     }
