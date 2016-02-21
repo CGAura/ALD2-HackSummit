@@ -38,6 +38,7 @@
     <Compile Include="LoadData.js" />
     <Compile Include="public\javascripts\bootstrap.min.js" />
     <Compile Include="public\javascripts\geolocation.js" />
+    <Compile Include="public\javascripts\jquery-2.2.0.min.js" />
     <Compile Include="public\javascripts\MapRender.js" />
     <Compile Include="routes\index.js" />
     <Content Include="data\CCC_Data.KML" />
