@@ -53,6 +53,10 @@
             flex: 0 1 40px;
         }
 
+        .box .row.footer div{
+            text-align:center;
+        }
+
 
 .MapWrapper {
     height: 100%;
@@ -110,4 +114,7 @@
     padding-right: 5px;
     text-align: center;
 }
+.popover{
 
+    max-width: 90% !important;
+}
