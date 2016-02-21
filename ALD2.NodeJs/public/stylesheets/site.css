@@ -53,6 +53,10 @@
             flex: 0 1 40px;
         }
 
+        .box .row.footer div{
+            text-align:center;
+        }
+
 
 .MapWrapper {
     height: 100%;

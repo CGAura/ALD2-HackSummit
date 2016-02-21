@@ -16,11 +16,22 @@ html
                     div(class="col-xs-12 fill")
                         block content
         div(class="row footer")
-          div(id="MyInfo")
-          div
-            p ALD2 - HackSummit
+            div(class="row")
+                div(class="col-xs-3")
+                   div(id="MyInfo", class="hidden")
+                div(class="col-xs-6")
+                   p ALD2 - HackSummit
+                div(class="col-xs-3")
+                   p(id="projectInfo", type="button",class="btn btn-lg btn-warn", data-toggle="popover") ?         
+
     script(src="/javascripts/jquery-2.2.0.min.js")
     script(src="/javascripts/bootstrap.min.js")
     block scripts
-    
+    script.
+        $('#projectInfo').popover({
+            title: "Immunisations and Vaccinations By CCG",
+            content:"<p>Immunisation is the safest and most effective way of giving protection against a disease.  If enough people in the community are immunised, the infection can no longer be spread from person to person and the disease dies out altogether. – NHS England <br/><br/> This graph represents data collected by NHS England showing immunisation for various diseases within a Clinical Commissioning Group (CCG)   </p>",
+            html: true,
+            placement:"auto"
+        });
 
