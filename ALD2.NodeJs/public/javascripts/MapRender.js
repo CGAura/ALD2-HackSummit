@@ -20,57 +20,68 @@ function initMap() {
                   event.feature.getProperty('ccgCode');
     });
     
-    var mencControllerDiv = document.createElement('div');
-    var mencController = new selectControl(mencControllerDiv, map, 'white', 'Men C', 'mencColor');
-    mencControllerDiv.index = 1;
-    map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(mencControllerDiv);
+    createVaccineControls();
     
-    var dtapControllerDiv = document.createElement('div');
-    var dtapController = new selectControl(dtapControllerDiv, map, 'white', 'DTAP', 'dtapColor');
-    dtapControllerDiv.index = 2;
-    map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(dtapControllerDiv);
-    
-    var hepbControllerDiv = document.createElement('div');
-    var hepbController = new selectControl(hepbControllerDiv, map, 'white', 'Hep B', 'hepbColor');
-    hepbControllerDiv.index = 3;
-    map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(hepbControllerDiv);
-    
-    var pvcControllerDiv = document.createElement('div');
-    var pvcController = new selectControl(pvcControllerDiv, map, 'white', 'PVC', 'pvcColor');
-    pvcControllerDiv.index = 4;
-    map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(pvcControllerDiv);
-    
-    var averageControllerDiv = document.createElement('div');
-    var averageController = new selectControl(averageControllerDiv, map, 'white', 'Average', 'color');
-    averageControllerDiv.index = 5;
-    map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(averageControllerDiv);
-
-    var greenColorKeyDiv = document.createElement('div');
-    var greenColorKeyController = new colorControl(greenColorKeyDiv, map, '#00ff00', '> 90%');
-    greenColorKeyDiv.index = 1;
-    map.controls[google.maps.ControlPosition.RIGHT_TOP].push(greenColorKeyDiv);
-    
-    var yellowColorKeyDiv = document.createElement('div');
-    var yellowColorKeyController = new colorControl(yellowColorKeyDiv, map, '#f2ff00', '60% - 90%');
-    yellowColorKeyDiv.index = 2;
-    map.controls[google.maps.ControlPosition.RIGHT_TOP].push(yellowColorKeyDiv);
-    
-    var orangeColorKeyDiv = document.createElement('div');
-    var orangeColorKeyController = new colorControl(orangeColorKeyDiv, map, '#ffbb00', '30% - 60%');
-    orangeColorKeyDiv.index = 3;
-    map.controls[google.maps.ControlPosition.RIGHT_TOP].push(orangeColorKeyDiv);
-    
-    var redColorKeyDiv = document.createElement('div');
-    var redColorKeyController = new colorControl(redColorKeyDiv, map, '#ff0000', '< 30%');
-    redColorKeyDiv.index = 4;
-    map.controls[google.maps.ControlPosition.RIGHT_TOP].push(redColorKeyDiv);
-    
-
+    createColorKey();
     
     return true;
 }
 
-function colorControl(controlDiv, map, color, text) {
+
+function createVaccineControls() {
+    
+    var index = 1
+    addNewVaccineControl(index, 'white', 'Men C', 'mencColor');
+    
+    index += 1;
+    addNewVaccineControl(index, 'white', 'DTAP', 'dtapColor');
+    
+    index += 1;
+    addNewVaccineControl(index, 'white', 'Hep B', 'hepbColor');
+        
+    index += 1;
+    addNewVaccineControl(index, 'white', 'PVC', 'pvcColor');
+
+    index += 1;
+    addNewVaccineControl(index, 'white', 'Average', 'color');
+
+}
+
+function addNewVaccineControl(index, color, id, vaccType) {
+    
+    var controllerDiv = document.createElement('div');
+    var Controller = new selectControl(controllerDiv, color, id, vaccType);
+    controllerDiv.index = index;
+    map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(controllerDiv);
+}
+
+
+function createColorKey() {
+    
+    var index = 1;
+    addNewColorKeyControl(index, '#00ff00', '> 90%');
+
+    index += 1;
+    addNewColorKeyControl(index, '#f2ff00', '60% - 90%');
+    
+    index += 1;
+    addNewColorKeyControl(index, '#ffbb00', '30% - 60%');
+    
+    index += 1;
+    addNewColorKeyControl(index, '#ff0000', '< 30%');
+    
+}
+
+function addNewColorKeyControl(index, color, id) {
+    
+    var controllerDiv = document.createElement('div');
+    var Controller = new colorControl(controllerDiv, color, id);
+    controllerDiv.index = index;
+    map.controls[google.maps.ControlPosition.RIGHT_TOP].push(controllerDiv);
+}
+
+
+function colorControl(controlDiv, color, text) {
     controlDiv.style.padding = '1px';
     var controlUI = document.createElement('div');
     controlUI.style.backgroundColor = color;
@@ -87,7 +98,7 @@ function colorControl(controlDiv, map, color, text) {
     controlUI.appendChild(controlText);
 }
 
-function selectControl(controlDiv, map, color, text, vaccType) {
+function selectControl(controlDiv, color, text, vaccType) {
     controlDiv.style.padding = '1px';
     var controlUI = document.createElement('div');
     controlUI.style.backgroundColor = color;
