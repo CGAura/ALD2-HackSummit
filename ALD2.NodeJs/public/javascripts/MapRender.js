@@ -21,20 +21,20 @@ function initMap() {
     });
     
     var greenColorKeyDiv = document.createElement('div');
-    var greenColorKeyController = new colorControl(greenColorKeyDiv, map, '#00ff00', 'Over 90% vaccinated');
-    map.controls[google.maps.ControlPosition.TOP_RIGHT].push(greenColorKeyDiv);
+    var greenColorKeyController = new colorControl(greenColorKeyDiv, map, '#00ff00', '> 90%');
+    map.controls[google.maps.ControlPosition.RIGHT].push(greenColorKeyDiv);
     
     var yellowColorKeyDiv = document.createElement('div');
-    var yellowColorKeyController = new colorControl(yellowColorKeyDiv, map, '#f2ff00', 'between 60% - 90% vaccinated');
-    map.controls[google.maps.ControlPosition.TOP_RIGHT].push(yellowColorKeyDiv);
+    var yellowColorKeyController = new colorControl(yellowColorKeyDiv, map, '#f2ff00', '60% - 90%');
+    map.controls[google.maps.ControlPosition.RIGHT].push(yellowColorKeyDiv);
     
     var orangeColorKeyDiv = document.createElement('div');
-    var orangeColorKeyController = new colorControl(orangeColorKeyDiv, map, '#ffbb00', 'between 30% - 60% vaccinated');
-    map.controls[google.maps.ControlPosition.TOP_RIGHT].push(orangeColorKeyDiv);
+    var orangeColorKeyController = new colorControl(orangeColorKeyDiv, map, '#ffbb00', '30% - 60%');
+    map.controls[google.maps.ControlPosition.RIGHT].push(orangeColorKeyDiv);
     
     var redColorKeyDiv = document.createElement('div');
-    var redColorKeyController = new colorControl(redColorKeyDiv, map, '#ff0000', 'Less than 30% vaccinated');
-    map.controls[google.maps.ControlPosition.TOP_RIGHT].push(redColorKeyDiv);
+    var redColorKeyController = new colorControl(redColorKeyDiv, map, '#ff0000', '< 30%');
+    map.controls[google.maps.ControlPosition.RIGHT].push(redColorKeyDiv);
     
     return true;
 }
