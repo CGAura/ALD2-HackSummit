@@ -34,6 +34,7 @@
     <Compile Include="app.js" />
     <Content Include="BashScripts\gitrepopull.sh" />
     <Compile Include="bingMaps.js" />
+    <Compile Include="GeoJsonBuilder.js" />
     <Compile Include="LoadData.js" />
     <Compile Include="public\javascripts\bootstrap.min.js" />
     <Compile Include="public\javascripts\geolocation.js" />
