@@ -1,33 +1,15 @@
-﻿doctype html
-html
-  head
-    title
-    style.
-        body, html{
-            height:100%;
-            width:100%;
-            }
-        .MapWrapper{
-            width:70%;
-            height:100%;
-            float:left;
-        }
-        #MyGoogleMapID{
-            height:100%;
-            width:100%;
-        }
-        #MyInfo {
-            width:20%;
-            float:right;
-            
-        }
+﻿extends layout
 
-   body
-        div(class="MapWrapper")
-            div(id="MyGoogleMapID")
-        div(id="MyInfo")
-        script(src="/javascripts/MapRender.js")           
-        script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTbkoShScdbiTv3Zi3PfepjMoMyFTzbeY&callback=initMap")
+block content
+    div(class="row fill")
+        div(class="col-xs-9 fill")
+                div(class="row fill")
+                    div(id="MyGoogleMapID")
+        div(class="col-xs-3")
+            div(id="MyInfo")
+block scripts
+    script(src="/javascripts/MapRender.js")           
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTbkoShScdbiTv3Zi3PfepjMoMyFTzbeY&callback=initMap")
        
 
 

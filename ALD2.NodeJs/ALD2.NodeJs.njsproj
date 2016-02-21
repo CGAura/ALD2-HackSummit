@@ -35,12 +35,15 @@
     <Content Include="BashScripts\gitrepopull.sh" />
     <Compile Include="bingMaps.js" />
     <Compile Include="LoadData.js" />
+    <Compile Include="public\javascripts\bootstrap.min.js" />
     <Compile Include="public\javascripts\geolocation.js" />
     <Compile Include="public\javascripts\MapRender.js" />
     <Compile Include="routes\index.js" />
     <Content Include="data\CCC_Data.KML" />
     <Content Include="data\CCGImmunisation.csv" />
     <Content Include="package.json" />
+    <Content Include="public\stylesheets\bootstrap-theme.min.css" />
+    <Content Include="public\stylesheets\bootstrap.min.css" />
     <Content Include="public\stylesheets\site.css" />
     <Content Include="README.md" />
     <Content Include="views\index.jade" />
