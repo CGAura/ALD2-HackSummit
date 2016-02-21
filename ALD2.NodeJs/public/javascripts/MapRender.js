@@ -124,6 +124,22 @@ function selectControl(controlDiv, color, text, vaccType) {
             };
         });
     });
+        
+    controlUI.addEventListener('mouseover', function () {
+        controlUI.style.backgroundColor = 'lightgrey';
+    });
+
+    controlUI.addEventListener('mouseout', function () {
+        controlUI.style.backgroundColor = color;
+    });
+
+    controlUI.addEventListener('mousedown', function () {
+        controlUI.style.backgroundColor = 'lightblue';
+    });
+    
+    controlUI.addEventListener('mouseup', function () {
+        controlUI.style.backgroundColor = color;
+    });
 }
 
 
