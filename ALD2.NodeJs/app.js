@@ -7,8 +7,7 @@ var loadData = require('./LoadData.js');
 var app = new express();
 
 // all environments
-var port = process.env.PORT || 1337;
-app.set('port', port);
+app.set('port', process.env.PORT);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use(express.favicon());
